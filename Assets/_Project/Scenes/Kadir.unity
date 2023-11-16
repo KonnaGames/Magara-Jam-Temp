@@ -386,10 +386,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7338935549696937456, guid: e719585efa22d9a468b29e5c81e85805, type: 3}
-      propertyPath: spawnRate
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7654971012993742418, guid: e719585efa22d9a468b29e5c81e85805, type: 3}
       propertyPath: m_Name
       value: UcgenEnemySpawner

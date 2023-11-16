@@ -7,6 +7,8 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
     private RangeBehaviour _rangeBehaviour;
     [SerializeField] private float moveSpeed;
 
+    public ParticleSystem ParticleSystem;
+
     public bool lockMovement = false;
 
 
@@ -45,5 +47,6 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
     public void TakeDamage()
     {
         Debug.Log("TakeDamage");
+        ParticleSystem.Play();
     }
 }
