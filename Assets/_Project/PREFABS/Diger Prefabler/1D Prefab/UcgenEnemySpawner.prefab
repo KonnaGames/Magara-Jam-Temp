@@ -80,7 +80,7 @@ MonoBehaviour:
   UcgenEnemy: {fileID: 4654622638380005942, guid: 380ce5391339bfd4ca9678b8a032631d, type: 3}
   SpawnPosX: {fileID: 5310993308344035085}
   SpawnPosX2: {fileID: 4087980790738906959}
-  spawnRate: 0.1
+  spawnRate: 1
 --- !u!1 &7923172989369481417
 GameObject:
   m_ObjectHideFlags: 0
