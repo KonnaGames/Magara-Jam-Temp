@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "3DMovement",
+                    "type": "Button",
+                    "id": "9ff2628e-f08f-4b0d-87f8-719004987953",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -48,6 +57,17 @@
                     "action": "1DMovement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "edd0c4a5-6182-4989-a3d2-874165f3d600",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "3DMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

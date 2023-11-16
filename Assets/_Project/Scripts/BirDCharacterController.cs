@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class BirDCharacterController : MonoBehaviour
+public class BirDCharacterController : MonoBehaviour, IDamagable
 {
     private InputManager _inputManager;
     [SerializeField] private float moveSpeed;
@@ -25,5 +24,10 @@ public class BirDCharacterController : MonoBehaviour
         Vector2 transformPos = transform.position;
         var nextPos = transformPos + (_inputManager.Get1DMovement * moveSpeed * Time.deltaTime);
         transform.position = nextPos;
+    }
+
+    public void TakeDamage()
+    {
+        Debug.Log("TakeDamage");
     }
 }

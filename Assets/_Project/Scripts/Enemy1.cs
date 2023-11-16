@@ -1,18 +1,41 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private float moveSpeed;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        CheckCorners();
+    }
+
+    private void FixedUpdate()
+    {
+        transform.position += Vector3.down * moveSpeed * Time.deltaTime;
+    }
+
+
+    private void CheckCorners()
+    {
+        if (transform.position.y < -9)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.TryGetComponent(out IDamagable damagable))
+        {
+            damagable.TakeDamage();
+        }
     }
 }

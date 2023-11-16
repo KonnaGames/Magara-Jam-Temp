@@ -35,6 +35,15 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""3DMovement"",
+                    ""type"": ""Button"",
+                    ""id"": ""9ff2628e-f08f-4b0d-87f8-719004987953"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -70,6 +79,17 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""1DMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""edd0c4a5-6182-4989-a3d2-874165f3d600"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""3DMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -79,6 +99,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player__1DMovement = m_Player.FindAction("1DMovement", throwIfNotFound: true);
+        m_Player__3DMovement = m_Player.FindAction("3DMovement", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -141,11 +162,13 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player__1DMovement;
+    private readonly InputAction m_Player__3DMovement;
     public struct PlayerActions
     {
         private @Inputs m_Wrapper;
         public PlayerActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @_1DMovement => m_Wrapper.m_Player__1DMovement;
+        public InputAction @_3DMovement => m_Wrapper.m_Player__3DMovement;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -158,6 +181,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @_1DMovement.started += instance.On_1DMovement;
             @_1DMovement.performed += instance.On_1DMovement;
             @_1DMovement.canceled += instance.On_1DMovement;
+            @_3DMovement.started += instance.On_3DMovement;
+            @_3DMovement.performed += instance.On_3DMovement;
+            @_3DMovement.canceled += instance.On_3DMovement;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -165,6 +191,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @_1DMovement.started -= instance.On_1DMovement;
             @_1DMovement.performed -= instance.On_1DMovement;
             @_1DMovement.canceled -= instance.On_1DMovement;
+            @_3DMovement.started -= instance.On_3DMovement;
+            @_3DMovement.performed -= instance.On_3DMovement;
+            @_3DMovement.canceled -= instance.On_3DMovement;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -185,5 +214,6 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void On_1DMovement(InputAction.CallbackContext context);
+        void On_3DMovement(InputAction.CallbackContext context);
     }
 }
