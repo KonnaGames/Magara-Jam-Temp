@@ -19,6 +19,9 @@ public class LoadingScreen : MonoBehaviour
         else if(instance != this) Destroy(this.gameObject);
         
         DontDestroyOnLoad(this);
+        
+        
+        text.transform.gameObject.SetActive(false);
     }
 
     
@@ -47,7 +50,9 @@ public class LoadingScreen : MonoBehaviour
         arkaPanel.color = new Color(color.r, color.g, color.b, 1);
         SceneManager.LoadScene(sceneBuildIndex);
         
+        text.transform.gameObject.SetActive(true);
         yield return new WaitForSeconds(3f);
+        text.transform.gameObject.SetActive(false);
 
         while (arkaPanel.color.a > 0.01f)
         {
