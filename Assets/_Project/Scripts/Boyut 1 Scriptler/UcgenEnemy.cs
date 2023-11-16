@@ -1,11 +1,11 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Enemy1 : MonoBehaviour, IDamagable
 {
     [SerializeField] private float moveSpeed;
+
+    [SerializeField] private GameObject Effect;
     void Start()
     {
         
@@ -41,6 +41,8 @@ public class Enemy1 : MonoBehaviour, IDamagable
     
     public void TakeDamage()
     {
+        var temp = Instantiate(Effect, transform.position, quaternion.identity);
+        Destroy(temp,3f);
         Debug.Log("Enemy Dead");
         Destroy(this.gameObject);
     }
