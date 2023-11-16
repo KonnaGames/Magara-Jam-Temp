@@ -1,18 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class BirDCharacterController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private InputManager _inputManager;
+    [SerializeField] private float moveSpeed;
+
+    private void Start()
     {
-        
+        _inputManager = GetComponent<InputManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    
+    
+    private void FixedUpdate()
     {
-        
+        MoveHandle();
+    }
+
+
+    private void MoveHandle()
+    {
+        Vector2 transformPos = transform.position;
+        var nextPos = transformPos + (_inputManager.Get1DMovement * moveSpeed * Time.deltaTime);
+        transform.position = nextPos;
     }
 }
