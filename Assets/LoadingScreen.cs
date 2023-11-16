@@ -28,7 +28,15 @@ public class LoadingScreen : MonoBehaviour
     public void LoadScene(string dialogue, int sceneBuildIndex)
     {
         text.text = dialogue;
-        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
+        StartCoroutine(StartFadeEffectCo(1));
+    }
+
+    
+    [ContextMenu("test")]
+    public void Test()
+    {
+        StartCoroutine(StartFadeEffectCo(1));
+
     }
 
 
