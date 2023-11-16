@@ -1,16 +1,25 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueManage : MonoBehaviour
 {
-    public List<DialogueLine> BirDDialogueLines;
+    public List<DialogueLine> BoyutBirDialogues;
     public int BirDDialogueInt;
-    public List<DialogueLine> IkiDDialogueLines;
+    public List<DialogueLine> BoyutIkiDialogues;
     public int IkiDDialogueInt;
-    public List<DialogueLine> UcDDialogueLines;
+    public List<DialogueLine> BoyutUcDialogues;
     public int UcDDialogueInt;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    public void GetBoyutBirDialogue()
+    {
+        
+    }
 }
 
 
