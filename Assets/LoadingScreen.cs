@@ -21,23 +21,15 @@ public class LoadingScreen : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-
     
     public void LoadScene(string dialogue, int sceneBuildIndex)
     {
         text.text = dialogue;
-        SceneManager.LoadScene(sceneBuildIndex);
-        StartCoroutine(StartFadeEffectCo());
+        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
     }
 
-    [ContextMenu("Test")]
-    public void Test()
-    {
-        StartCoroutine(StartFadeEffectCo());
 
-    }
-
-    IEnumerator StartFadeEffectCo()
+    IEnumerator StartFadeEffectCo(int sceneBuildIndex)
     {
         Debug.Log(arkaPanel.color.a);
         Color color = arkaPanel.color;
@@ -53,6 +45,7 @@ public class LoadingScreen : MonoBehaviour
 
         color = arkaPanel.color;
         arkaPanel.color = new Color(color.r, color.g, color.b, 1);
+        SceneManager.LoadScene(sceneBuildIndex);
         
         yield return new WaitForSeconds(3f);
 
