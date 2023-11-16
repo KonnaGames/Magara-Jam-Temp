@@ -38,4 +38,13 @@ public class RangeBehaviour : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.transform.TryGetComponent(out Enemy1 enemy))
+        {
+            if (enemy == enemies)
+                enemies = null;
+        }
+    }
 }
