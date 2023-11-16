@@ -1,21 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
     private Inputs input;
 
     public Vector2 Get1DMovement => input.Player._1DMovement.ReadValue<Vector2>();
-    
-    
-    
-    
-    
-    
+    public bool GetSpaceButtonPressed => input.Player.Space.WasPressedThisFrame();
 
-    
-    
-    
-    
+
     private void OnEnable()
     {
         input = new Inputs();

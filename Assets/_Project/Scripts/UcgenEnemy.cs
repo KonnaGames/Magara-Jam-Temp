@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class Enemy1 : MonoBehaviour, IDamagable
 {
     [SerializeField] private float moveSpeed;
     void Start()
@@ -37,5 +37,11 @@ public class Enemy1 : MonoBehaviour
         {
             damagable.TakeDamage();
         }
+    }
+    
+    public void TakeDamage()
+    {
+        Debug.Log("Enemy Dead");
+        Destroy(this.gameObject);
     }
 }

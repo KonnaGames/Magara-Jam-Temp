@@ -32,4 +32,6 @@ public class UcgenEnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnRate);
         }
     }
+
+   
 }
