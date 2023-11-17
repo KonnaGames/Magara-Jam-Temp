@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 interface IInteractable
 {
@@ -8,21 +9,33 @@ interface IInteractable
 }
 public class InteractionController : MonoBehaviour
 {
-    public Transform interactorSource;
-    public float interactRange;
+    [SerializeField] private Image interactImage;
+    [SerializeField] private Transform interactorSource;
+    [SerializeField] private float interactRange;
+
+    private IInteractable interactable1;
+
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        interactable1 = null;
+        Ray r = new Ray(interactorSource.position, interactorSource.forward);
+        if (Physics.Raycast(r, out RaycastHit hitObject, interactRange))
         {
-            Ray r = new Ray(interactorSource.position, interactorSource.forward);
-            if (Physics.Raycast(r, out RaycastHit hitInfo, interactRange))
+            if (hitObject.collider.gameObject.TryGetComponent(out IInteractable interactable))
             {
-                if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactable))
+                interactable1 = interactable;
+                Debug.Log("Interact");
+                interactImage.gameObject.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     interactable.Interact();
                 }
-            }
+            }            
+        }
+        if (interactable1 == null)
+        {
+            interactImage.gameObject.SetActive(false);
         }
     }
 }
