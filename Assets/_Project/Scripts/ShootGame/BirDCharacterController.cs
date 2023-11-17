@@ -17,11 +17,15 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
     private float time = 0;
     private float timer = 0.15f;
 
+    public bool lockMovement;
+
 
     private void Start()
     {
         _inputManager = GetComponent<InputManager>();
         rb2D = GetComponent<Rigidbody2D>();
+
+        lockMovement = true;
     }
 
 
@@ -39,6 +43,8 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
 
     private void Shoot()
     {
+        if (lockMovement) return;
+
         time += Time.deltaTime;
         if (_inputManager.GetSpaceButtonPressed && time >= timer)
         {
@@ -56,6 +62,7 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
 
     private void MoveHandle()
     {
+        if (lockMovement) return;
         rb2D.AddForce(_inputManager.Get1DMovement * moveSpeed, ForceMode2D.Force);
         if (Mathf.Abs(rb2D.velocity.x)  > maxVel)
         {

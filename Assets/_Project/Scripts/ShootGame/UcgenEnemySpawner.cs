@@ -12,12 +12,6 @@ public class UcgenEnemySpawner : MonoBehaviour
     [SerializeField] private Transform SpawnPosX2;
     [SerializeField] private float spawnRate;
 
-
-    private void Start()
-    {
-        StartSpawning();
-    }
-
     public void StartSpawning()
     {
         StartCoroutine(SpawnerCo());
