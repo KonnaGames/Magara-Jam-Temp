@@ -58,7 +58,10 @@ MonoBehaviour:
     Position: {fileID: 0}
     Color: {r: 0, g: 1, b: 0.45026922, a: 1}
   _boxFactory: {fileID: 0}
+  _heartCount: 3
+  _score: 0
   _settings:
     BoxMoveDirection: {x: 1, y: 0, z: 0}
     BoxSpeed: 5
     SpawnRate: 1
+    SuccessScore: 10

@@ -65,7 +65,7 @@ public class GuitarHeroManager : MonoBehaviour
     }
 
 
-    //Box en sona ulaþtýðýnda yok olacak o zaman çalýþacak
+    //Box en sona ulaï¿½tï¿½ï¿½ï¿½nda yok olacak o zaman ï¿½alï¿½ï¿½acak
     public void OnBoxDestroyed(Box box)
     {
         _heartCount--;
@@ -91,7 +91,7 @@ public class GuitarHeroManager : MonoBehaviour
 
     public void Failed()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Success()

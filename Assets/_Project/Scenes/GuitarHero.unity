@@ -1896,10 +1896,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1898391868}
     - target: {fileID: 892646906066891287, guid: e38ad7b4335db0e48ac6711d60effef2, type: 3}
-      propertyPath: _settings.SuccessScore
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 892646906066891287, guid: e38ad7b4335db0e48ac6711d60effef2, type: 3}
       propertyPath: _spawnPlaces.Array.data[0].Position
       value: 
       objectReference: {fileID: 993878268}
@@ -2011,22 +2007,6 @@ PrefabInstance:
     - target: {fileID: 3174183789003184417, guid: 781ca80f41da89a48830732a15171131, type: 3}
       propertyPath: m_Name
       value: CheckArea
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523885754642873327, guid: 781ca80f41da89a48830732a15171131, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778980588130204684, guid: 781ca80f41da89a48830732a15171131, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517476423114045106, guid: 781ca80f41da89a48830732a15171131, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5333531091030166200, guid: 781ca80f41da89a48830732a15171131, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
