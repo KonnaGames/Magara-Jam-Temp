@@ -362,9 +362,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1304959900104710087, guid: 11ee3440ebb2ec74184cb8415f37cb5d, type: 3}
+      propertyPath: m_LinearDrag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6672103423278162293, guid: 11ee3440ebb2ec74184cb8415f37cb5d, type: 3}
       propertyPath: m_Name
       value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000800481883392894, guid: 11ee3440ebb2ec74184cb8415f37cb5d, type: 3}
+      propertyPath: moveSpeed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8943028753028010550, guid: 11ee3440ebb2ec74184cb8415f37cb5d, type: 3}
       propertyPath: m_LocalPosition.x
