@@ -306,6 +306,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &247665621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247665619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9584f8d56699c524983afb9bcf4eaf67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &559668212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -451,7 +463,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0}
+  m_BackGroundColor: {r: 0.06918234, g: 0.06918234, b: 0.06918234, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1081,6 +1093,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1716332633066488, guid: 99b5cf7aa94d64943b73e4d3f6d7cd85, type: 3}
       insertIndex: -1
       addedObject: {fileID: 247665620}
+    - targetCorrespondingSourceObject: {fileID: 1716332633066488, guid: 99b5cf7aa94d64943b73e4d3f6d7cd85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 247665621}
   m_SourcePrefab: {fileID: 100100000, guid: 99b5cf7aa94d64943b73e4d3f6d7cd85, type: 3}
 --- !u!1001 &2471345227580454337
 PrefabInstance:
