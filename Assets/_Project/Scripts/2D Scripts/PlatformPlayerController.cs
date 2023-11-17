@@ -20,6 +20,8 @@ public class PlatformPlayerController : MonoBehaviour
 
     [SerializeField] private SpriteRenderer body;
     [SerializeField] private ParticleSystem _particleSystem;
+    [SerializeField] private Material tailMaterial;
+    
     private int colorID;
 
 
@@ -32,6 +34,7 @@ public class PlatformPlayerController : MonoBehaviour
 
         _animator = GetComponent<Animator>();
         _particleSystem = GetComponentInChildren<ParticleSystem>();
+        tailMaterial.color = Color.white;
     }
 
     private void Update()
@@ -46,6 +49,7 @@ public class PlatformPlayerController : MonoBehaviour
             body.color = collision.gameObject.GetComponent<SpriteRenderer>().color;
             colorID = collision.gameObject.GetComponent<Keys>().keyId;
             _particleSystem.startColor = body.color;
+            tailMaterial.color = body.color;
             _particleSystem.Play();
             Destroy(collision.gameObject);
         }
