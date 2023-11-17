@@ -17,13 +17,11 @@ public class PlatformPlayerController : MonoBehaviour
     
     Vector2 nextPos = Vector2.one;
 
-
     [SerializeField] private SpriteRenderer body;
     [SerializeField] private ParticleSystem _particleSystem;
     [SerializeField] private Material tailMaterial;
     
     private int colorID;
-
 
     private void Start()
     {
@@ -115,7 +113,7 @@ public class PlatformPlayerController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, nextPos, lerpTime * Time.deltaTime);
        
         Vector2 posControl = transform.position;
-        if (Vector2.Distance(posControl,nextPos) < 0.001f) //
+        if (Vector2.Distance(posControl,nextPos) < 0.001f)
         {
             isMoveing = false;
             _animator.SetBool("isMoving", false);
