@@ -6,7 +6,6 @@ public class PlayerMovement3D : MonoBehaviour
 {
     [SerializeField] Transform playerCamera;
     [SerializeField] Transform floorPoint;
-    [SerializeField] Transform spawnPosition;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
     [SerializeField] bool cursorLock = true;
     [SerializeField] float mouseSensitivity = 3.5f;
@@ -43,7 +42,6 @@ public class PlayerMovement3D : MonoBehaviour
     {
         UpdateMouse();
         UpdateMove();
-        CheckLimits();
     }
 
     private void UpdateMouse()
@@ -84,14 +82,6 @@ public class PlayerMovement3D : MonoBehaviour
         if (isGrounded! && controller.velocity.y < -1f)
         {
             velocityY = -8f;
-        }
-    }
-    private void CheckLimits()
-    {
-        float limitY = -6f;
-        if (transform.position.y < limitY)
-        {
-            transform.position = spawnPosition.position;
         }
     }
 }
