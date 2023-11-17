@@ -23,6 +23,8 @@ public class PlatformPlayerController : MonoBehaviour
 
     [SerializeField] private SpriteRenderer body;
     [SerializeField] private ParticleSystem _particleSystem;
+    [SerializeField] private Material tailMaterial;
+    
     private int colorID;
     [SerializeField] private Material tailMaterial;
 
