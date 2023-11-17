@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class MachineInteract : MonoBehaviour , IInteractable
 {
-   public void Interact()
-   {
+    public string interactionName => "Insert Coin";
+
+
+    public bool isInteracted { get; private set; }
+
+    public void Interact()
+    {
         Debug.Log("Interact");
-   }
+        isInteracted = true;
+    }
+    private void Start()
+    {
+        isInteracted = false;
+    }
 }

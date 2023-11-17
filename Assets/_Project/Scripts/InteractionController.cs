@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 interface IInteractable
 {
     public void Interact();
+    public string interactionName { get;}
+    public bool isInteracted { get;}
 }
 public class InteractionController : MonoBehaviour
 {
     [SerializeField] private Image interactImage;
     [SerializeField] private Transform interactorSource;
     [SerializeField] private float interactRange;
+    [SerializeField] private TextMeshProUGUI interactionText;
 
     private IInteractable interactable1;
+
 
 
     private void Update()
@@ -24,12 +29,17 @@ public class InteractionController : MonoBehaviour
         {
             if (hitObject.collider.gameObject.TryGetComponent(out IInteractable interactable))
             {
-                interactable1 = interactable;
-                Debug.Log("Interact");
-                interactImage.gameObject.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
+                if (interactable.isInteracted)
                 {
-                    interactable.Interact();
+                    interactImage.gameObject.SetActive(false);
+                    return;
+                }
+                interactable1 = interactable;
+                interactionText.text = interactable.interactionName + " (E)";
+                interactImage.gameObject.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E) && !interactable.isInteracted)
+                {
+                    interactable.Interact();                   
                 }
             }            
         }
