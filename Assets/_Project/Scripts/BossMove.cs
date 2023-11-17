@@ -5,6 +5,8 @@ using UnityEngine;
 public class BossMove : MonoBehaviour
 {
     [SerializeField] private Transform[] transformPoints;
+    [SerializeField] private Transform mouthPoint;
+    [SerializeField] private Transform projectilePrefab;
     [SerializeField] private float speed;
 
     private int currentPoint;
@@ -23,5 +25,9 @@ public class BossMove : MonoBehaviour
         {
             currentPoint = (currentPoint + 1) % transformPoints.Length;
         }
+    }
+    private void Shoot()
+    {
+
     }
 }
