@@ -76,6 +76,8 @@ public class GuitarHeroController : MonoBehaviour
         _boxInArea.StopMoving();
         StartCoroutine(CreateParticle(_boxInArea, _createParticleSettings.ParticleDelay));
         print("Success: " + _successCount);
+
+        GuitarHeroManager.Instance.OnGainScore();
     }
 
     private void OnWrongKeyDown()
@@ -96,6 +98,7 @@ public class GuitarHeroController : MonoBehaviour
     private void OnBoxDestroyed(Box box)
     {
         _cameraShake.StartCameraShake(_cameraShakeSettings.Duration, _cameraShakeSettings.Magnitude);
+        GuitarHeroManager.Instance.OnBoxDestroyed(box);
     }
 
     private IEnumerator CreateParticle(Box box,float delay)

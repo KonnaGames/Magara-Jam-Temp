@@ -501,6 +501,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314619071394680733, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7248807363742904919, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
@@ -604,7 +624,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1241664081}
   - {fileID: 3471077373041483479}
+  - {fileID: 4130527709375118357}
   - {fileID: 1669189042}
   - {fileID: 758528596}
-  - {fileID: 4130527709375118357}
   - {fileID: 1824510950}
