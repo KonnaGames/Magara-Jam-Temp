@@ -17,6 +17,7 @@ public class PlayerMovement3D : MonoBehaviour
 
     private float velocityY;
     private bool isGrounded;
+    private bool canJump = true;
 
     private float cameraCap;
     private Vector2 currentMouseDelta;
@@ -74,14 +75,22 @@ public class PlayerMovement3D : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        if (isGrounded && Input.GetButtonDown("Jump") && canJump)
         {
             velocityY = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            canJump = false;
+            StartCoroutine(JumpTimer());
         }
 
         if (isGrounded! && controller.velocity.y < -1f)
         {
             velocityY = -8f;
         }
+    }
+    private IEnumerator JumpTimer()
+    {
+        yield return new WaitForSeconds(0.8f);
+
+        canJump = true;
     }
 }

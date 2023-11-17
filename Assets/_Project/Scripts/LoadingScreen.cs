@@ -30,12 +30,12 @@ public class LoadingScreen : MonoBehaviour
     public void LoadScene(string dialogue, int sceneBuildIndex)
     {
         text.text = dialogue;
-        StartCoroutine(StartFadeEffectCo(1));
+        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
     }
     
     public void LoadScene(int sceneBuildIndex)
     {
-        StartCoroutine(StartFadeEffectCo(1));
+        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
     }
 
     
