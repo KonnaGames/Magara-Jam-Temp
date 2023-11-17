@@ -11,6 +11,7 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
     [SerializeField] private float maxVel;
 
     public ParticleSystem ParticleSystem;
+    public AudioClip laserShoot;
 
     public Transform spawnPoint;
     public GameObject BulletPrefab;
@@ -42,6 +43,7 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
         time += Time.deltaTime;
         if (_inputManager.GetSpaceButtonPressed && time >= timer)
         {
+            SoundManager.instance.PlaySoundEffect(laserShoot);
             Instantiate(BulletPrefab, spawnPoint.position, quaternion.identity);
             time = 0;
         }

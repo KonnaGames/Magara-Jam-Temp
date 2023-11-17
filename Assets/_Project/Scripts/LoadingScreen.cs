@@ -35,6 +35,7 @@ public class LoadingScreen : MonoBehaviour
     
     public void LoadScene(int sceneBuildIndex)
     {
+        text.text = "";
         StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
     }
 
