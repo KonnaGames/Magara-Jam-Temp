@@ -1,6 +1,6 @@
-using UnityEditor.U2D.Aseprite;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class PlatformPlayerController : MonoBehaviour
 {
@@ -16,6 +16,8 @@ public class PlatformPlayerController : MonoBehaviour
     
     Vector2 nextPos = Vector2.one;
 
+    [SerializeField] private PlatformInventory inventory;
+
     private void Start()
     {
         transform.position = Vector3.zero;
@@ -26,6 +28,36 @@ public class PlatformPlayerController : MonoBehaviour
     private void Update()
     {
         MoveDirection();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("key"))
+        {
+            Debug.Log("key");
+            GameObject item = collision.transform.gameObject;
+            inventory.AddItem(item);
+        }
+        else if (collision.gameObject.CompareTag("door") && inventory.GetItem() != 0)
+        {
+            if (inventory.GetItem() == collision.gameObject.GetComponent<Door>().doorId)
+            {
+                Destroy(collision.gameObject);
+                inventory.RemoveItem();
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.CompareTag("door") && inventory.GetItem() != 0)
+        {
+            if (inventory.GetItem() == collision.gameObject.GetComponent<Door>().doorId)
+            {
+                Destroy(collision.collider.gameObject);
+                inventory.RemoveItem();
+            }
+        }
     }
 
     private void MoveDirection()
@@ -68,7 +100,7 @@ public class PlatformPlayerController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, nextPos, lerpTime * Time.deltaTime);
        
         Vector2 posControl = transform.position;
-        if (posControl == nextPos)
+        if (Vector2.Distance(posControl,nextPos) < 0.001f) //
         {
             isMoveing = false;
             playerTransform = transform.position;
@@ -83,11 +115,24 @@ public class PlatformPlayerController : MonoBehaviour
 
             if (hit.collider != null)
             {
+                OpenTheDoor(hit);
                 Vector2 targetPos = hit.collider.gameObject.transform.position;
                 distance = Vector2.Distance(playerTransform, targetPos) - 1;
                 return (moveDirection, distance);
             }
         }
         return (moveDirection, 0);
+    }
+
+    private void OpenTheDoor(RaycastHit2D hit)
+    {
+        if (hit.collider.gameObject.CompareTag("door") && inventory.GetItem() != 0)
+        {
+            if(inventory.GetItem() == hit.collider.gameObject.GetComponent<Door>().doorId)
+            {
+                hit.collider.gameObject.layer = default;
+                hit.collider.gameObject.GetComponent<Collider2D>().isTrigger = true;            
+            }
+        }
     }
 }
