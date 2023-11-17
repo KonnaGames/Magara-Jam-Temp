@@ -20,6 +20,9 @@ public class GuitarHeroManager : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private Settings _settings;
 
+    [Header("Sound Settings")]
+    [SerializeField] private SoundSettings _soundSettings;
+
     private bool _isSpawning = false;
 
     public static GuitarHeroManager Instance => _instance;
@@ -82,6 +85,8 @@ public class GuitarHeroManager : MonoBehaviour
     {
         _score++;
         GuitarHeroViewManager.Instance.SetScore(_score);
+        _settings.BoxSpeed += _settings.SpeedMultiplier;
+        SoundManager.instance.PlaySoundEffect(_soundSettings.GainScoreClip);
 
         if(_score >= _settings.SuccessScore)
         {
@@ -106,6 +111,13 @@ public class GuitarHeroManager : MonoBehaviour
         public float BoxSpeed;
         public float SpawnRate;
         public int SuccessScore;
+        public float SpeedMultiplier;
+    }
+
+    [Serializable]
+    public struct SoundSettings
+    {
+        public AudioClip GainScoreClip;
     }
 
     [Serializable]
