@@ -1,34 +1,49 @@
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirDCharacterController : MonoBehaviour, IDamagable
 {
     private InputManager _inputManager;
-    private RangeBehaviour _rangeBehaviour;
     private Rigidbody2D rb2D;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float maxVel;
 
     public ParticleSystem ParticleSystem;
 
-    public bool lockMovement = false;
-
+    public Transform spawnPoint;
+    public GameObject BulletPrefab;
+    private float time = 0;
+    private float timer = 0.15f;
 
 
     private void Start()
     {
         _inputManager = GetComponent<InputManager>();
-        _rangeBehaviour = GetComponentInChildren<RangeBehaviour>();
         rb2D = GetComponent<Rigidbody2D>();
     }
 
 
     private void Update()
     {
-        if (_inputManager.GetSpaceButtonPressed)
+        Shoot();
+        CheckCorner();
+    }
+
+    private void CheckCorner()
+    {
+        if (transform.position.x < -10) transform.position = new Vector3(10, transform.position.y);
+        else if (transform.position.x > 10) transform.position = new Vector3(-10, transform.position.y);
+    }
+
+    private void Shoot()
+    {
+        time += Time.deltaTime;
+        if (_inputManager.GetSpaceButtonPressed && time >= timer)
         {
-            _rangeBehaviour.DestroyRangeEnemies();
+            Instantiate(BulletPrefab, spawnPoint.position, quaternion.identity);
+            time = 0;
         }
     }
 
@@ -41,12 +56,6 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
 
     private void MoveHandle()
     {
-        if (lockMovement) return;
-        
-        // Vector2 transformPos = transform.position;
-        // var nextPos = transformPos + (_inputManager.Get1DMovement * moveSpeed * Time.deltaTime);
-        // transform.position = nextPos;
-        
         rb2D.AddForce(_inputManager.Get1DMovement * moveSpeed, ForceMode2D.Force);
         if (Mathf.Abs(rb2D.velocity.x)  > maxVel)
         {
@@ -57,7 +66,7 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
 
     public void TakeDamage()
     {
-        Debug.Log("TakeDamage");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         ParticleSystem.Play();
     }
 }

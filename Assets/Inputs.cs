@@ -46,7 +46,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Space"",
+                    ""name"": ""Shoot"",
                     ""type"": ""Button"",
                     ""id"": ""548f496d-c76d-471f-9b85-97c9127a75d1"",
                     ""expectedControlType"": ""Button"",
@@ -90,6 +90,39 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""8b85b637-0705-44aa-b961-257aca2c4ec0"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""1DMovement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""9a232430-2d04-422c-84cf-1f280bfd5b58"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""1DMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""5ee9b3ee-f846-4110-bcad-431f91fc8029"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""1DMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""edd0c4a5-6182-4989-a3d2-874165f3d600"",
                     ""path"": """",
@@ -107,7 +140,18 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Space"",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""51a94cfb-bb6d-47ba-a625-979e247511e3"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -120,7 +164,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player__1DMovement = m_Player.FindAction("1DMovement", throwIfNotFound: true);
         m_Player__3DMovement = m_Player.FindAction("3DMovement", throwIfNotFound: true);
-        m_Player_Space = m_Player.FindAction("Space", throwIfNotFound: true);
+        m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -184,14 +228,14 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player__1DMovement;
     private readonly InputAction m_Player__3DMovement;
-    private readonly InputAction m_Player_Space;
+    private readonly InputAction m_Player_Shoot;
     public struct PlayerActions
     {
         private @Inputs m_Wrapper;
         public PlayerActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @_1DMovement => m_Wrapper.m_Player__1DMovement;
         public InputAction @_3DMovement => m_Wrapper.m_Player__3DMovement;
-        public InputAction @Space => m_Wrapper.m_Player_Space;
+        public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -207,9 +251,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @_3DMovement.started += instance.On_3DMovement;
             @_3DMovement.performed += instance.On_3DMovement;
             @_3DMovement.canceled += instance.On_3DMovement;
-            @Space.started += instance.OnSpace;
-            @Space.performed += instance.OnSpace;
-            @Space.canceled += instance.OnSpace;
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -220,9 +264,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @_3DMovement.started -= instance.On_3DMovement;
             @_3DMovement.performed -= instance.On_3DMovement;
             @_3DMovement.canceled -= instance.On_3DMovement;
-            @Space.started -= instance.OnSpace;
-            @Space.performed -= instance.OnSpace;
-            @Space.canceled -= instance.OnSpace;
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -244,6 +288,6 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     {
         void On_1DMovement(InputAction.CallbackContext context);
         void On_3DMovement(InputAction.CallbackContext context);
-        void OnSpace(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
     }
 }

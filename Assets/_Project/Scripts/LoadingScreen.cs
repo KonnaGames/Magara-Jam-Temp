@@ -1,9 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class LoadingScreen : MonoBehaviour
 {
@@ -11,7 +11,9 @@ public class LoadingScreen : MonoBehaviour
 
     public TextMeshProUGUI text;
 
-    public Image arkaPanel;
+    // public Image arkaPanel;
+    public RawImage videoPanel;
+    public VideoPlayer VideoPlayer;
 
     private void Awake()
     {
@@ -30,6 +32,11 @@ public class LoadingScreen : MonoBehaviour
         text.text = dialogue;
         StartCoroutine(StartFadeEffectCo(1));
     }
+    
+    public void LoadScene(int sceneBuildIndex)
+    {
+        StartCoroutine(StartFadeEffectCo(1));
+    }
 
     
     [ContextMenu("test")]
@@ -42,36 +49,44 @@ public class LoadingScreen : MonoBehaviour
 
     IEnumerator StartFadeEffectCo(int sceneBuildIndex)
     {
-        Debug.Log(arkaPanel.color.a);
-        Color color = arkaPanel.color;
+        VideoPlayer.Play();
+        // Debug.Log(arkaPanel.color.a);
+        Color color = videoPanel.color;
 
         float vel = 1;
-        while (arkaPanel.color.a <= 0.99f)
+        while (videoPanel.color.a <= 0.99f)
         {
-            color = arkaPanel.color;
+            color = videoPanel.color;
             color.a = Mathf.SmoothDamp(color.a, 1, ref vel, 1);
-            arkaPanel.color = color;
+            videoPanel.color = color;
+            // videoPanel.color = color;
             yield return new WaitForFixedUpdate();
         }
 
-        color = arkaPanel.color;
-        arkaPanel.color = new Color(color.r, color.g, color.b, 1);
+        color = videoPanel.color;
+        videoPanel.color = new Color(color.r, color.g, color.b, 1);
+        // videoPanel.color = videoPanel.color;
         SceneManager.LoadScene(sceneBuildIndex);
         
         text.transform.gameObject.SetActive(true);
         yield return new WaitForSeconds(3f);
         text.transform.gameObject.SetActive(false);
+        text.text = "";
 
-        while (arkaPanel.color.a > 0.01f)
+        while (videoPanel.color.a > 0.01f)
         {
-            color = arkaPanel.color;
+            color = videoPanel.color;
             color.a = Mathf.SmoothDamp(color.a, 0, ref vel, 1);
-            arkaPanel.color = color;
+            videoPanel.color = color;
+            // videoPanel.color = color;
+
             yield return new WaitForFixedUpdate();
         }
         
-        color = arkaPanel.color;
-        arkaPanel.color = new Color(color.r, color.g, color.b, 0);
+        color = videoPanel.color;
+        videoPanel.color = new Color(color.r, color.g, color.b, 0);
+        // videoPanel.color = videoPanel.color;
+        VideoPlayer.Stop();
 
         
         yield break;

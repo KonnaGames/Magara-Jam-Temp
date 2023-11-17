@@ -6,7 +6,7 @@ public class InputManager : MonoBehaviour
     private Inputs input;
 
     public Vector2 Get1DMovement => input.Player._1DMovement.ReadValue<Vector2>();
-    public bool GetSpaceButtonPressed => input.Player.Space.WasPressedThisFrame();
+    public bool GetSpaceButtonPressed => input.Player.Shoot.WasPressedThisFrame();
 
 
     private void OnEnable()

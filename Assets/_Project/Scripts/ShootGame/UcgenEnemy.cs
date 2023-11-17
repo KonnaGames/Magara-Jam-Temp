@@ -1,3 +1,4 @@
+using System;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -6,11 +7,8 @@ public class Enemy1 : MonoBehaviour, IDamagable
     [SerializeField] private float moveSpeed;
 
     [SerializeField] private GameObject Effect;
-    void Start()
-    {
-        
-    }
 
+    public static event Action OnStarDeath;
     void Update()
     {
         CheckCorners();
@@ -43,6 +41,7 @@ public class Enemy1 : MonoBehaviour, IDamagable
     {
         var temp = Instantiate(Effect, transform.position, quaternion.identity);
         Destroy(temp,3f);
+        OnStarDeath?.Invoke();
         Debug.Log("Enemy Dead");
         Destroy(this.gameObject);
     }
