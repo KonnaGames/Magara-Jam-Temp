@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PlatformPlayerController : MonoBehaviour
 {
-    [SerializeField] private PlatformSoundManager soundManager;
-
-
     private bool isMoveing;
     private Animator _animator;
 
@@ -24,7 +21,7 @@ public class PlatformPlayerController : MonoBehaviour
     [SerializeField] private SpriteRenderer body;
     [SerializeField] private ParticleSystem _particleSystem;
     private int colorID;
-    [SerializeField] private Material tailMaterial;
+
 
     private void Start()
     {
@@ -79,25 +76,21 @@ public class PlatformPlayerController : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && !isMoveing)
         {
-            soundManager.PlayJumpSound();
             moveDirection = new Vector2(0, 1);
             transform.rotation = Quaternion.Euler(0, 0, 180);
         }
         else if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && !isMoveing)
         {
-            soundManager.PlayJumpSound();
             moveDirection = new Vector2(0, -1);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && !isMoveing)
         {
-            soundManager.PlayJumpSound();
             moveDirection = new Vector2(-1, 0);
             transform.rotation = Quaternion.Euler(0, 0, 90);
         }
         else if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && !isMoveing)
         {
-            soundManager.PlayJumpSound();
             moveDirection = new Vector2(1, 0);
             transform.rotation = Quaternion.Euler(0, 0, -90);
         }
@@ -120,7 +113,7 @@ public class PlatformPlayerController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, nextPos, lerpTime * Time.deltaTime);
        
         Vector2 posControl = transform.position;
-        if (Vector2.Distance(posControl,nextPos) < 0.001f)
+        if (Vector2.Distance(posControl,nextPos) < 0.001f) //
         {
             isMoveing = false;
             _animator.SetBool("isMoving", false);
