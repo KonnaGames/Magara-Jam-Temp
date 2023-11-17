@@ -23,8 +23,6 @@ public class PlatformPlayerController : MonoBehaviour
 
     [SerializeField] private SpriteRenderer body;
     [SerializeField] private ParticleSystem _particleSystem;
-    [SerializeField] private Material tailMaterial;
-    
     private int colorID;
     [SerializeField] private Material tailMaterial;
 
@@ -51,13 +49,9 @@ public class PlatformPlayerController : MonoBehaviour
         {
             body.color = collision.gameObject.GetComponent<SpriteRenderer>().color;
             colorID = collision.gameObject.GetComponent<Keys>().keyId;
-<<<<<<< Updated upstream
             _particleSystem.startColor = body.color;
             tailMaterial.color = body.color;
             _particleSystem.Play();
-=======
-            tailMaterial.color = body.color;
->>>>>>> Stashed changes
             Destroy(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("door"))
