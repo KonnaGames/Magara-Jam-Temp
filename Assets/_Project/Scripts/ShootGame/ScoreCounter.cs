@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -6,6 +5,8 @@ public class ScoreCounter : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public int score;
+
+    public bool isWarping;
 
     private void Start()
     {
@@ -26,8 +27,14 @@ public class ScoreCounter : MonoBehaviour
 
     private void UpdateScore()
     {
+        if (isWarping) return;
+        
         score--;
         text.text = "Collect " + score.ToString() + " Stars";
-        if(score == 0) LoadingScreen.instance.LoadScene("Bu da neydi Simdi?",0);
+        if (score == 0)
+        {
+            isWarping = true;
+            LoadingScreen.instance.LoadScene("Bu da neydi Simdi?",0);
+        }
     }
 }
