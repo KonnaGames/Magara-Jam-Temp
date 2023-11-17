@@ -16,10 +16,14 @@ public class PlatformPlayerController : MonoBehaviour
     
     Vector2 nextPos = Vector2.one;
 
-    [SerializeField] private PlatformInventory inventory;
+
+    [SerializeField] private SpriteRenderer body;
+    private int colorID;
+
 
     private void Start()
     {
+        colorID = 0;
         transform.position = Vector3.zero;
         playerTransform = transform.position;
         isMoveing = true;
@@ -34,28 +38,26 @@ public class PlatformPlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("key"))
         {
-            Debug.Log("key");
-            GameObject item = collision.transform.gameObject;
-            inventory.AddItem(item);
+            body.color = collision.gameObject.GetComponent<SpriteRenderer>().color;
+            colorID = collision.gameObject.GetComponent<Keys>().keyId;
+            Destroy(collision.gameObject);
         }
-        else if (collision.gameObject.CompareTag("door") && inventory.GetItem() != 0)
+        else if (collision.gameObject.CompareTag("door"))
         {
-            if (inventory.GetItem() == collision.gameObject.GetComponent<Door>().doorId)
+            if (colorID == collision.gameObject.GetComponent<Door>().doorId)
             {
                 Destroy(collision.gameObject);
-                inventory.RemoveItem();
             }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.CompareTag("door") && inventory.GetItem() != 0)
+        if (collision.collider.gameObject.CompareTag("door"))
         {
-            if (inventory.GetItem() == collision.gameObject.GetComponent<Door>().doorId)
+            if (colorID == collision.gameObject.GetComponent<Door>().doorId)
             {
                 Destroy(collision.collider.gameObject);
-                inventory.RemoveItem();
             }
         }
     }
@@ -126,9 +128,9 @@ public class PlatformPlayerController : MonoBehaviour
 
     private void OpenTheDoor(RaycastHit2D hit)
     {
-        if (hit.collider.gameObject.CompareTag("door") && inventory.GetItem() != 0)
+        if (hit.collider.gameObject.CompareTag("door"))
         {
-            if(inventory.GetItem() == hit.collider.gameObject.GetComponent<Door>().doorId)
+            if(colorID == hit.collider.gameObject.GetComponent<Door>().doorId)
             {
                 hit.collider.gameObject.layer = default;
                 hit.collider.gameObject.GetComponent<Collider2D>().isTrigger = true;            

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c54875b6c1bae5d4b88f06d37d41bf80, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.39215687, g: 0.9019608, b: 0.011764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd512e80bd0e83847979279c728b934b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorId: 1
+  key: Green Door
