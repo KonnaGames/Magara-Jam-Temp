@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Yusuf.unity
     guid: bac5cf9402e126b428210486e38a12cb
+  - enabled: 1
+    path: Assets/_Project/Scenes/GuitarHero.unity
+    guid: 2e51f6a89365825458bb3ea1e717553c
   m_configObjects: {}
