@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/ShooterGame.unity
     guid: 5ec50903b63b3de4a8b308f7e16048c6
   - enabled: 1
-    path: Assets/_Project/Scenes/Yusuf.unity
-    guid: bac5cf9402e126b428210486e38a12cb
-  - enabled: 1
     path: Assets/_Project/Scenes/GuitarHero.unity
     guid: 2e51f6a89365825458bb3ea1e717553c
+  - enabled: 1
+    path: Assets/_Project/Scenes/Ahmet.unity
+    guid: aa205478d3469914d9713f587f83d0d3
+  - enabled: 1
+    path: Assets/_Project/Scenes/Yusuf.unity
+    guid: bac5cf9402e126b428210486e38a12cb
   m_configObjects: {}
