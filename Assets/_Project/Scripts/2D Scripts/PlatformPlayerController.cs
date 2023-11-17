@@ -19,6 +19,7 @@ public class PlatformPlayerController : MonoBehaviour
 
 
     [SerializeField] private SpriteRenderer body;
+    [SerializeField] private ParticleSystem _particleSystem;
     private int colorID;
 
 
@@ -30,6 +31,7 @@ public class PlatformPlayerController : MonoBehaviour
         isMoveing = true;
 
         _animator = GetComponent<Animator>();
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Update()
@@ -43,6 +45,8 @@ public class PlatformPlayerController : MonoBehaviour
         {
             body.color = collision.gameObject.GetComponent<SpriteRenderer>().color;
             colorID = collision.gameObject.GetComponent<Keys>().keyId;
+            _particleSystem.startColor = body.color;
+            _particleSystem.Play();
             Destroy(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("door"))
@@ -60,6 +64,7 @@ public class PlatformPlayerController : MonoBehaviour
         {
             if (colorID == collision.gameObject.GetComponent<Door>().doorId)
             {
+                _particleSystem.Play();
                 Destroy(collision.collider.gameObject);
             }
         }
