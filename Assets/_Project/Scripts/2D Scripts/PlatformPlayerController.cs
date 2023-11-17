@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatformPlayerController : MonoBehaviour
 {
     private bool isMoveing;
+    private Animator _animator;
 
     private Vector2 playerTransform;
     private RaycastHit2D hit;
@@ -27,6 +28,8 @@ public class PlatformPlayerController : MonoBehaviour
         transform.position = Vector3.zero;
         playerTransform = transform.position;
         isMoveing = true;
+
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -91,6 +94,7 @@ public class PlatformPlayerController : MonoBehaviour
     private void Move(Vector2 moveDirection)
     {
         isMoveing = true;
+        _animator.SetBool("isMoving", true);
         var controlResult = DistanceControl(moveDirection);
 
         Vector2 move = controlResult.Item1;
@@ -105,6 +109,7 @@ public class PlatformPlayerController : MonoBehaviour
         if (Vector2.Distance(posControl,nextPos) < 0.001f) //
         {
             isMoveing = false;
+            _animator.SetBool("isMoving", false);
             playerTransform = transform.position;
         }
     }
