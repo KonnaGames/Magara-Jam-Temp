@@ -10,9 +10,8 @@ public class ArcadeMachineBolum1 : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        LoadingScreen.instance.LoadScene("Dialogue Gelicek",2);
+        DialogueManage.instance.StartStoryDialogue();
+        // LoadingScreen.instance.LoadScene("Dialogue Gelicek",2);
         isInteracted = true;
     }
-
-    
 }

@@ -34,7 +34,7 @@ public class ScoreCounter : MonoBehaviour
         if (score == 0)
         {
             isWarping = true;
-            LoadingScreen.instance.LoadScene("Bu da neydi Simdi?",0);
+            LoadingScreen.instance.LoadScene("Bu da neydi Simdi?",1);
         }
     }
 }

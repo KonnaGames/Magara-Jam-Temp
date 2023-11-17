@@ -57,7 +57,7 @@ public class LoadingScreen : MonoBehaviour
         while (videoPanel.color.a <= 0.99f)
         {
             color = videoPanel.color;
-            color.a = Mathf.SmoothDamp(color.a, 1, ref vel, 1);
+            color.a = Mathf.SmoothDamp(color.a, 1, ref vel, 0.2f);
             videoPanel.color = color;
             // videoPanel.color = color;
             yield return new WaitForFixedUpdate();
@@ -76,7 +76,7 @@ public class LoadingScreen : MonoBehaviour
         while (videoPanel.color.a > 0.01f)
         {
             color = videoPanel.color;
-            color.a = Mathf.SmoothDamp(color.a, 0, ref vel, 1);
+            color.a = Mathf.SmoothDamp(color.a, 0, ref vel, 0.2f);
             videoPanel.color = color;
             // videoPanel.color = color;
 

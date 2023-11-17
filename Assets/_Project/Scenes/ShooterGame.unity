@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &328362143 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4108305057617592666, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
-  m_PrefabInstance: {fileID: 4130527709375118357}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &758528594
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,9 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caab0c15695d1e748947357394f0bbb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ucgenEnemySpawner: {fileID: 1846581745}
-  birDCharacterController: {fileID: 986729534}
-  Canvas: {fileID: 328362143}
 --- !u!4 &758528596
 Transform:
   m_ObjectHideFlags: 0
@@ -180,17 +172,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9070907377702879832, guid: 11ee3440ebb2ec74184cb8415f37cb5d, type: 3}
   m_PrefabInstance: {fileID: 3471077373041483479}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &986729534 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8000800481883392894, guid: 11ee3440ebb2ec74184cb8415f37cb5d, type: 3}
-  m_PrefabInstance: {fileID: 3471077373041483479}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5793cf2a286a4334997099483db9c5b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1241664081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260,6 +241,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 864933166588452970, guid: 1f2f429719d3ed848806acdd836861a9, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 864933166588452970, guid: 1f2f429719d3ed848806acdd836861a9, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 864933166588452970, guid: 1f2f429719d3ed848806acdd836861a9, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 864933166588452970, guid: 1f2f429719d3ed848806acdd836861a9, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 6958310291584172242, guid: 1f2f429719d3ed848806acdd836861a9, type: 3}
       propertyPath: m_Name
       value: Loading Screen Manager Canvas
@@ -344,6 +341,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8663557465805990680, guid: 1f2f429719d3ed848806acdd836861a9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -417,17 +418,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1846581745 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4873503425829700121, guid: 11ee3440ebb2ec74184cb8415f37cb5d, type: 3}
-  m_PrefabInstance: {fileID: 3471077373041483479}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8378b6f7fb239dd4396420c739927633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3471077373041483479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -501,6 +491,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520149365382505, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314619071394680733, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7248807363742904919, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
@@ -604,7 +614,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1241664081}
   - {fileID: 3471077373041483479}
+  - {fileID: 4130527709375118357}
   - {fileID: 1669189042}
   - {fileID: 758528596}
-  - {fileID: 4130527709375118357}
   - {fileID: 1824510950}

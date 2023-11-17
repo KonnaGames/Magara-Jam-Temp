@@ -1,22 +1,38 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GuitarHeroManager : MonoBehaviour
 {
+    public static event Action OnGameSuccessEvent;
+
+    public static GuitarHeroManager _instance;
     [SerializeField] private List<SpawnPlace> _spawnPlaces;
     [SerializeField] private BoxFactory _boxFactory;
+
+    [SerializeField] private int _heartCount = 3;
+    [SerializeField] private int _score = 0;
 
     [Header("Settings")]
     [SerializeField] private Settings _settings;
 
     private bool _isSpawning = false;
 
+    public static GuitarHeroManager Instance => _instance;
+
+    private void Awake()
+    {
+        _instance = this;
+    }
+
     void Start()
     {
         StartSpawning();
+        GuitarHeroViewManager.Instance.SetScore(_score);
     }
 
     private void StartSpawning()
@@ -49,12 +65,47 @@ public class GuitarHeroManager : MonoBehaviour
     }
 
 
+    //Box en sona ulaþtýðýnda yok olacak o zaman çalýþacak
+    public void OnBoxDestroyed(Box box)
+    {
+        _heartCount--;
+        GuitarHeroViewManager.Instance.RemoveHeart();
+
+        if (_heartCount <= 0)
+        {
+            Failed();
+            print("Failed");
+        }
+    }
+
+    public void OnGainScore()
+    {
+        _score++;
+        GuitarHeroViewManager.Instance.SetScore(_score);
+
+        if(_score >= _settings.SuccessScore)
+        {
+            Success();
+        }
+    }
+
+    public void Failed()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void Success()
+    {
+        LoadingScreen.instance.LoadScene(1);
+    }
+
     [Serializable]
     public struct Settings
     {
         public Vector3 BoxMoveDirection;
         public float BoxSpeed;
         public float SpawnRate;
+        public int SuccessScore;
     }
 
     [Serializable]
