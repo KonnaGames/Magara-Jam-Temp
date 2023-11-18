@@ -49,7 +49,7 @@ public class GunController : MonoBehaviour
     }
     private IEnumerator ShootLimiter()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.8f);
 
         canShoot = true;
     }

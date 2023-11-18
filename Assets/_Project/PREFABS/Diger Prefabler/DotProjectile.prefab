@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af58303447a9c504e9ab76c63783a6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 10
   bulletRightVFX: {fileID: 4051079841022577313, guid: 652277eb86ba2974488c346ae97986d7, type: 3}
   bossProjectileVFX: {fileID: 4051079841022577313, guid: 4ac193500480cc3418d80ddb5dc9ce0a, type: 3}
 --- !u!135 &3404972232146419641
