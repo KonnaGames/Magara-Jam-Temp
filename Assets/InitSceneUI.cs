@@ -8,10 +8,11 @@ using TMPro;
 
 public class InitSceneUI : MonoBehaviour
 {
+    public event Action OnPlayButtonClickedEvent;
+
     public Animator arcadeTicketVerme;
 
     [SerializeField] private GameObject cam;
-    [SerializeField] Quaternion camSecondPos;
     [SerializeField] private float lerpSpeed;
     private bool isLook;
 
@@ -35,14 +36,12 @@ public class InitSceneUI : MonoBehaviour
     }
     private void Update()
     {
-        if (isLook)
-        {
-            cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, camSecondPos, lerpSpeed * Time.deltaTime);
-        }
+
     }
 
     public void IlkSahneyiYukle()
     {
+        OnPlayButtonClickedEvent?.Invoke();
         StartCoroutine(LoadScene(1));
     }
 
@@ -93,8 +92,7 @@ public class InitSceneUI : MonoBehaviour
 
     IEnumerator LoadScene(int buildIndex)
     {
-        isLook = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(5);
         arcadeTicketVerme.SetTrigger("TicketVer");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(buildIndex);
