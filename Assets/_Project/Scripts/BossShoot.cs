@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class BossShoot : MonoBehaviour
 {
+
     [SerializeField] private Transform projectilePrefab;
     [SerializeField] private Transform mouthPoint;
+
 
     public void CreateProjectile()
     {
