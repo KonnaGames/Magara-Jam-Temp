@@ -68,7 +68,16 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
 
     public void TakeDamage()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         ParticleSystem.Play();
+        
+        DialogueManage.instance.StartCustomDialogue();
+        
+        Invoke(nameof(RestartScene), 2);
+    }
+
+    private void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
 }

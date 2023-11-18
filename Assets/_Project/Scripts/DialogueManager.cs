@@ -34,6 +34,7 @@ public class DialogueManage : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
         DialoguePanel.SetActive(false);
+        CustomDialoguePanel.SetActive(false);
 
         isPlaying = false;
         
@@ -42,7 +43,7 @@ public class DialogueManage : MonoBehaviour
 
         if (currentDialogue == 0)
         {
-            StartStoryDialogue();
+            // StartStoryDialogue();
         }
     }
 
@@ -90,15 +91,13 @@ public class DialogueManage : MonoBehaviour
 
         int randomInt = Random.Range(0, CustomDialogueLines.Count);
         
-        
-        
         isPlaying = true;
         _audioSource.clip = CustomDialogueLines[randomInt].voice;
         _audioSource.Play();
         customText.text = CustomDialogueLines[randomInt].Line;
-        CustomDialoguePanel.SetActive(false);
+        CustomDialoguePanel.SetActive(true);
         
-        Invoke(nameof(CloseCustomDialogue), _audioSource.clip.length + 1f);
+        Invoke(nameof(CloseCustomDialogue), 1);
     }
 
     private void CloseDialogue()
