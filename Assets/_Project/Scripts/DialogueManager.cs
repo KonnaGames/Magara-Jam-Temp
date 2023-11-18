@@ -42,11 +42,6 @@ public class DialogueManage : MonoBehaviour
         
         //TODO: Bu kismini savelemek lazim.
         currentDialogue = 0;
-
-        if (currentDialogue == 0)
-        {
-            StartStoryDialogue();
-        }
     }
 
     public void HikayeSifirla()

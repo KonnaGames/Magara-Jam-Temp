@@ -20,7 +20,7 @@ public class InitSceneUI : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject menuPanel;
 
-    [Header("Sound")]
+    [Header("Sound")] [SerializeField] private AudioClip soundTestClip;
 
     [SerializeField] private TextMeshProUGUI soundText;
     //AudioListener.volume = 1 //Default Volume
@@ -43,8 +43,6 @@ public class InitSceneUI : MonoBehaviour
 
     public void IlkSahneyiYukle()
     {
-        isLook = true;
-        arcadeTicketVerme.SetTrigger("TicketVer");
         StartCoroutine(LoadScene(1));
     }
 
@@ -66,46 +64,38 @@ public class InitSceneUI : MonoBehaviour
 
     private void AddSoundText()
     {
-        if (soundVolume > 1)
-        {
-            soundVolume = 1;
-        }
-        if (soundVolume < 0)
-        {
-            soundVolume = 0;
-        }
+        soundVolume = Mathf.Clamp01(soundVolume);
+        SoundManager.instance.PlaySoundEffect(soundTestClip);
+        
+        var temp = (int)(soundVolume * 10) % 11;
+
         soundText.text = "";
-        for (int i = 0; i < soundVolume * 10; i++)
+        for (int i = 0; i < temp; i++)
         {
             soundText.text += "|";
         }
-       
         AudioListener.volume = soundVolume;
     }
 
     public void VolumeUP()
     {
-        if (soundVolume <= 1 && soundVolume >= 0)
-        {
-            soundVolume += soundRate;
-            Debug.Log(AudioListener.volume);
-            AddSoundText();
-        }
+        soundVolume += soundRate;
+        Debug.Log(AudioListener.volume);
+        AddSoundText();
     }
 
     public void VolumeDown()
     {
-        if (soundVolume <= 1 && soundVolume >= 0)
-        {
-            soundVolume -= soundRate;
-            AudioListener.volume = soundVolume;
-            Debug.Log(AudioListener.volume);
-            AddSoundText();
-        }
+        soundVolume -= soundRate;
+        Debug.Log(AudioListener.volume);
+        AddSoundText();
     }
 
     IEnumerator LoadScene(int buildIndex)
     {
+        isLook = true;
+        yield return new WaitForSeconds(0.5f);
+        arcadeTicketVerme.SetTrigger("TicketVer");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(buildIndex);
         yield break;
