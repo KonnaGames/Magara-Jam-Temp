@@ -18,7 +18,6 @@ public class BossMove : MonoBehaviour
     private int currentPoint;
     private int healthMax = 100;
     private bool canShoot = true;
-    private bool intantiateAllowed = false;
 
     private void Awake()
     {
@@ -77,11 +76,5 @@ public class BossMove : MonoBehaviour
 
         canShoot = true;
     }
-    private IEnumerator AnimationDelay()
-    {
-        yield return new WaitForSeconds(0.5f);
-
-        intantiateAllowed = true;
-    }
-    
+   
 }
