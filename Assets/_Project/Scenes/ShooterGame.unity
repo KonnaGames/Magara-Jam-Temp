@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManagerCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4766117236714190391, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -434,7 +438,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 90214a278e9a6364089c2c1a7d78124d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.384
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -981,6 +985,26 @@ PrefabInstance:
     - target: {fileID: 2011296391384152534, guid: b7b3551dac303214784a7706115ce1d3, type: 3}
       propertyPath: m_Name
       value: 1DPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999881709371496979, guid: b7b3551dac303214784a7706115ce1d3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999881709371496979, guid: b7b3551dac303214784a7706115ce1d3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1400110679
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216435051768137055, guid: b7b3551dac303214784a7706115ce1d3, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216435051768137055, guid: b7b3551dac303214784a7706115ce1d3, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216435051768137055, guid: b7b3551dac303214784a7706115ce1d3, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6894729503013033079, guid: b7b3551dac303214784a7706115ce1d3, type: 3}
       propertyPath: m_LocalPosition.x

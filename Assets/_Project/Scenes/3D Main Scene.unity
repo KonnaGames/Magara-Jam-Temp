@@ -224,12 +224,327 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
-      propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: Jhon
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.size
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[0].Line
+      value: "Hadi ama john bunu bile mi ba\u015Faram\u0131yorsun\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[1].Line
+      value: "Beceriksiz herif.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[2].Line
+      value: "San\u0131r\u0131m biraz gerizekal\u0131s\u0131n de\u011Fil mi.\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[3].Line
+      value: "Ovv bu ac\u0131tm\u0131\u015F olmal\u0131 herneyse s\u0131radaki.\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[6].Line
+      value: "Ne oluyor be\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].Line
+      value: "\u015Eimdi seninle ufak bir oyun oynayaca\u011F\u0131z john. \u015Eu
+        \xFC\xE7geni g\xF6r\xFCyormusun o sensin. Kar\u015F\u0131dan gelen d\xFC\u015Fmanlar\u0131
+        vur yeter. Klasik bunu ba\u015Farabilirmisin bilmiyorum. Dosyanda zekan\u0131n
+        biraz k\u0131t oldu\u011Fu yaz\u0131yordu.\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[8].Line
+      value: "Ne dosyas\u0131 ne oyunu siz benimle dalga m\u0131 ge\xE7iyorsunuz.\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].Line
+      value: "John daha fazla ba\u011F\u0131rmaya devam edersen sinirlenmeye ba\u015Flayaca\u011F\u0131m.
+        Hadi kuzucum \u015Fu oyunu ge\xE7 art\u0131k\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[0].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: ffb04215b1b408347a989fba7042cdbc, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[1].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 839ace9fe1e47b945bf6e5c4faea1666, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[2].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: eca3dc6637ae5ca4ba01578671375b03, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[3].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 36b198ae7917f194699b2ff0d75faaf4, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: CustomDialogueLines.Array.data[4].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 36b198ae7917f194699b2ff0d75faaf4, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[10].Line
+      value: "Tamam hadi \xE7\u0131kar beni buradan\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[11].Line
+      value: "Aaaa \xE7ok ay\u0131p john. Daha yeni geldin. Hem bak \xF6n\xFCm\xFCzde
+        daha \xE7ok oyun var.\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[12].Line
+      value: "Yeter art\u0131k bari ne oldu\u011Funu s\xF6yle\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[13].Line
+      value: "S\xF6yledim ya ben bir makineyim. Hadi art\u0131k yeni oyun vakti.\r\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[14].Line
+      value: "Dur\r\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].Line
+      value: "Hah \xE7ok ge\xE7\r\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[16].Line
+      value: "Yeter art\u0131k ben gidiyorum\r\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[17].Line
+      value: "Nereye gidiyorsun ulan. Nerde oldu\u011Funu biliyormusun sanki. Ger\xE7ekten
+        akl\u0131n k\u0131tm\u0131\u015F.\r\n\r\r\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[18].Line
+      value: Kes sesini be.
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[19].Line
+      value: "Son oyuna ho\u015F geldin john. E o kadar \xE7al\u0131\u015Ft\u0131n
+        \xE7abalad\u0131n. Bir \xF6d\xFCl\xFC hak ettin. Kek istermisin.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[1].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c5d352b27d6b8f48a174bbc514d5f00, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[20].Line
+      value: "Ne keki be.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[21].Line
+      value: "Bildi\u011Fin kek. Ha ama bu kek yalan de\u011Fil merak etme. Ben GlaDOS
+        de\u011Filim.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[22].Line
+      value: "O kim\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[23].Line
+      value: "Eski bir arkada\u015F\u0131m neyse sen \u015Fimdi onu bo\u015Fver de
+        son oyunu da bitir art\u0131k.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[24].Line
+      value: "Hadi art\u0131k her\u015Fey bitti \xE7\u0131kar beni buradan.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[25].Line
+      value: "Dur john daha sana benim kim oldu\u011Fumu buras\u0131n\u0131n neresi
+        oldu\u011Funu neden b\xFCt\xFCn bu oyunlar\u0131 oynad\u0131\u011F\u0131n\u0131
+        anlataca\u011F\u0131m.\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[26].Line
+      value: "H\u0131zl\u0131 anlat.\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[3].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: c29ca9c9985ed724c8b93285a99b300a, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: b9873a39fec67684fad7b2cfbe647cff, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[6].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: a20f9ea6a38ae624eb7cec897b6088bf, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[8].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[8].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b917677f1e682c48bf80707103af98b, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[10].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[10].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[11].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: e826633de8dabeb4b97d24dffe550734, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[12].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[12].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[13].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: a88a9f2581f389c4abaf5aa4144961c1, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[14].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[14].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 7143840277799e046866a1bbd1317825, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[16].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[16].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[17].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: f8c543a9b8278fe40b2b94318f57ed2f, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[18].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[18].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[19].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 97f6f3a81f97e4e44aa07f6dc3ea8152, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[20].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[20].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[21].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a3a8cf9f51a8614981bb8ed1fe2e3fa, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[22].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[22].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[23].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fef2d156eda918746834c4fefe490254, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[24].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[24].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[25].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: a4abae5237a526e48a1fe096d7881ab5, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[26].actor
+      value: 
+      objectReference: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[26].voice
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[6].tartismaID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].tartismaID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[10].tartismaID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[16].tartismaID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[19].tartismaID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[24].tartismaID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[6].myEvent.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
-      propertyPath: StoryDialgouesLines.Array.data[10].myEvent.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[10].myEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -239,6 +554,10 @@ PrefabInstance:
       propertyPath: StoryDialgouesLines.Array.data[10].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1623829713}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[6].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -252,12 +571,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1623829713}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[10].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -268,6 +607,34 @@ PrefabInstance:
       value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1623829713}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1623829713}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1623829713}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadingScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LoadingScreen, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -276,8 +643,68 @@ PrefabInstance:
       value: LoadingScreen, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[10].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadingScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadingScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadingScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[5].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[9].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -285,6 +712,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[10].myEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[9].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[15].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1270021844130932905, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}

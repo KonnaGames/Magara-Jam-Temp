@@ -21,8 +21,6 @@ public class LoadingScreen : MonoBehaviour
         else if(instance != this) Destroy(this.gameObject);
         
         DontDestroyOnLoad(this);
-        
-        
         text.transform.gameObject.SetActive(false);
     }
 
@@ -30,25 +28,38 @@ public class LoadingScreen : MonoBehaviour
     public void LoadScene(string dialogue, int sceneBuildIndex)
     {
         text.text = dialogue;
-        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
+        StartCoroutine(StartFadeEffectCo(sceneBuildIndex,false));
     }
     
     public void LoadScene(int sceneBuildIndex)
     {
         text.text = "";
-        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
+        StartCoroutine(StartFadeEffectCo(sceneBuildIndex,false));
+    }
+
+    /// <summary>
+    /// Main sahneyi yukler
+    /// </summary>
+    public void LoadMainMenu()
+    {
+        StartCoroutine(StartFadeEffectCo(1,false));
+        Invoke(nameof(DialogueManagerAktiveEt), 3f);
+    }
+
+    private void DialogueManagerAktiveEt()
+    {
+        DialogueManage.instance.StartStoryDialogue();
     }
 
     
     [ContextMenu("test")]
     public void Test()
     {
-        StartCoroutine(StartFadeEffectCo(1));
-
+        StartCoroutine(StartFadeEffectCo(1, true));
     }
 
 
-    IEnumerator StartFadeEffectCo(int sceneBuildIndex)
+    IEnumerator StartFadeEffectCo(int sceneBuildIndex, bool dialogueAc)
     {
         VideoPlayer.Play();
         // Debug.Log(arkaPanel.color.a);
@@ -63,7 +74,6 @@ public class LoadingScreen : MonoBehaviour
             // videoPanel.color = color;
             yield return new WaitForFixedUpdate();
         }
-
         color = videoPanel.color;
         videoPanel.color = new Color(color.r, color.g, color.b, 1);
         // videoPanel.color = videoPanel.color;
@@ -88,8 +98,9 @@ public class LoadingScreen : MonoBehaviour
         videoPanel.color = new Color(color.r, color.g, color.b, 0);
         // videoPanel.color = videoPanel.color;
         VideoPlayer.Stop();
-
         
+        if(dialogueAc) Invoke(nameof(DialogueManagerAktiveEt), 1f);
+
         yield break;
     }
 }

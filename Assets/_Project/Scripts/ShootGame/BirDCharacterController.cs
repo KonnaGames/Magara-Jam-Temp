@@ -72,7 +72,7 @@ public class BirDCharacterController : MonoBehaviour, IDamagable
         
         DialogueManage.instance.StartCustomDialogue();
         
-        Invoke(nameof(RestartScene), 2);
+        Invoke(nameof(RestartScene), 0.5f);
     }
 
     private void RestartScene()
