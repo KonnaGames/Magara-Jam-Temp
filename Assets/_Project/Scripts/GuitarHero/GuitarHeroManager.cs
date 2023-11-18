@@ -21,9 +21,11 @@ public class GuitarHeroManager : MonoBehaviour
     [SerializeField] private Settings _settings;
 
     [Header("Sound Settings")]
+    [SerializeField] private AudioSource _audioSource;
     [SerializeField] private SoundSettings _soundSettings;
 
     private bool _isSpawning = false;
+    private bool _isGameFinished = false;
 
     public static GuitarHeroManager Instance => _instance;
 
@@ -71,7 +73,10 @@ public class GuitarHeroManager : MonoBehaviour
     //Box en sona ula�t���nda yok olacak o zaman �al��acak
     public void OnBoxDestroyed(Box box)
     {
-        _heartCount--;
+        if (_isGameFinished)
+            return;
+
+            _heartCount--;
         GuitarHeroViewManager.Instance.RemoveHeart();
 
         if (_heartCount <= 0)
@@ -83,9 +88,14 @@ public class GuitarHeroManager : MonoBehaviour
 
     public void OnGainScore()
     {
+        if (_isGameFinished)
+            return;
+
         _score++;
         GuitarHeroViewManager.Instance.SetScore(_score);
         _settings.BoxSpeed += _settings.SpeedMultiplier;
+        _settings.SpawnRate -= _settings.RateMultiplier;
+
         SoundManager.instance.PlaySoundEffect(_soundSettings.GainScoreClip);
 
         if(_score >= _settings.SuccessScore)
@@ -101,6 +111,8 @@ public class GuitarHeroManager : MonoBehaviour
 
     public void Success()
     {
+        _isGameFinished = true;
+        _audioSource.Stop();
         LoadingScreen.instance.LoadScene(1);
     }
 
@@ -112,6 +124,7 @@ public class GuitarHeroManager : MonoBehaviour
         public float SpawnRate;
         public int SuccessScore;
         public float SpeedMultiplier;
+        public float RateMultiplier;
     }
 
     [Serializable]
