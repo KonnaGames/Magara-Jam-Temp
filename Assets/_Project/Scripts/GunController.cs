@@ -11,11 +11,11 @@ public class GunController : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private Transform cross;
     [SerializeField] private LayerMask layer;
+    [SerializeField] private AudioClip fireAudio;
+    [SerializeField] private Animation recoilAnim;
 
     private bool canShoot = true;
-    private void Start()
-    {
-    }
+
     private void Update()
     {
         if (Input.GetMouseButton(0) && canShoot)
@@ -33,6 +33,11 @@ public class GunController : MonoBehaviour
     }
     void Shoot()
     {
+        CameraShake3D.Shake(0.5f, 0.4f);
+        GunRecoil();
+
+        SoundManager.instance.PlaySoundEffect(fireAudio);
+
         GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
 
         Ray ray = Camera.main.ScreenPointToRay(cross.position);
@@ -55,6 +60,11 @@ public class GunController : MonoBehaviour
     }
     private void ShootRight()
     {
+        CameraShake3D.Shake(0.5f, 0.4f);
+        GunRecoil();
+
+        SoundManager.instance.PlaySoundEffect(fireAudio);
+
         GameObject bulletRight = Instantiate(bulletPrefabRight, shootPoint.position, shootPoint.rotation);
         Ray ray = Camera.main.ScreenPointToRay(cross.position);
         RaycastHit hit;
@@ -67,5 +77,9 @@ public class GunController : MonoBehaviour
             bulletRight.GetComponent<Rigidbody>().AddForce(direction * bulletSpeed, ForceMode.Impulse);
             Destroy(bulletRight, 1);
         }
+    }
+    private void GunRecoil()
+    {
+        recoilAnim.Play();
     }
 }

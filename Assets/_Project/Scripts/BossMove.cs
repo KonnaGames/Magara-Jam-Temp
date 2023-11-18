@@ -10,6 +10,9 @@ public class BossMove : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform[] transformPoints;
     [SerializeField] private Transform bulletVfx;
+    [SerializeField] private Transform ghostPoint1;
+    [SerializeField] private Transform ghostPoint2;
+    [SerializeField] private Transform ghostPrefab;
     [SerializeField] private float speed;
     [SerializeField] private float projectileSpeed;
     [SerializeField] private int health = 100;
@@ -18,6 +21,7 @@ public class BossMove : MonoBehaviour
     private int currentPoint;
     private int healthMax = 100;
     private bool canShoot = true;
+    private bool canSpawn = true;
 
     private void Awake()
     {
@@ -29,6 +33,10 @@ public class BossMove : MonoBehaviour
     }
     void Update()
     {
+        if (health <= 50)
+        {
+            StageTwo();
+        }
         if (canShoot)
         {
             Shoot();
@@ -60,7 +68,7 @@ public class BossMove : MonoBehaviour
     }
     private void Damage()
     {
-        health -= 10;
+        health -= 50;
     }
     public float GetHealthNormalized()
     {
@@ -76,5 +84,22 @@ public class BossMove : MonoBehaviour
 
         canShoot = true;
     }
-   
+    private void StageTwo()
+    {
+        if (canSpawn)
+        {
+            Debug.Log("StageTwo");
+            canSpawn = false;
+            StartCoroutine(SpawnGhosts());
+        }
+    }
+    private IEnumerator SpawnGhosts()
+    {
+        Instantiate(ghostPrefab, ghostPoint1.position, Quaternion.identity);
+        Instantiate(ghostPrefab, ghostPoint2.position, Quaternion.identity);
+
+        yield return new WaitForSeconds(5);
+
+        canSpawn = true;
+    }
 }

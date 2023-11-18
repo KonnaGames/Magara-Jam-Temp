@@ -14,7 +14,6 @@ public class CameraShake : MonoBehaviour
     {
         StartCoroutine(Shake(duration, magnitude));
     }
-
     private IEnumerator Shake(float duration, float magnitude)
     {
         var elapsed = 0f;

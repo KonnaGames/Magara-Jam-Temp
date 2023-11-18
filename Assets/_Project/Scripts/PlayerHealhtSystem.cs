@@ -22,12 +22,16 @@ public class PlayerHealhtSystem : MonoBehaviour
         {
             Instantiate(BossProjectileVFX, transform.position, Quaternion.identity);
             Destroy(col.gameObject);
-            Dameged();
+            if (canDamaged)
+            {
+                Dameged();
+            }
         }
     }
     private void Dameged()
     {
         canDamaged = false;
+        StartCoroutine(CantTakeDamage());
         playerHealht -= 1;
         if (playerHealht <= 0)
         {
