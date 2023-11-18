@@ -12,6 +12,6 @@ public class ArcadeMachineBolum1 : MonoBehaviour, IInteractable
     {
         DialogueManage.instance.StartStoryDialogue();
         // LoadingScreen.instance.LoadScene("Dialogue Gelicek",2);
-        isInteracted = true;
+        // isInteracted = true;
     }
 }

@@ -747,6 +747,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[0].sahneYukle
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[1].sahneYukle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 835537739885802735, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[2].sahneYukle
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1270021844130932905, guid: 3fd8eef13ed303c4eb90b09f9621ae9b, type: 3}
       propertyPath: m_Pivot.x
       value: 0

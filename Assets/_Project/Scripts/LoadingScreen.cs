@@ -67,10 +67,10 @@ public class LoadingScreen : MonoBehaviour
         color = videoPanel.color;
         videoPanel.color = new Color(color.r, color.g, color.b, 1);
         // videoPanel.color = videoPanel.color;
-        SceneManager.LoadScene(sceneBuildIndex);
         
         text.transform.gameObject.SetActive(true);
         yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(sceneBuildIndex);
         text.transform.gameObject.SetActive(false);
         text.text = "";
 

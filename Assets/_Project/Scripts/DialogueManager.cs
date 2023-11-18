@@ -35,7 +35,13 @@ public class DialogueManage : MonoBehaviour
         isPlaying = false;
         
         //TODO: Bu kismini savelemek lazim.
+        currentDialogue = PlayerPrefs.GetInt("StoryHolder");
+    }
+
+    public void HikayeSifirla()
+    {
         currentDialogue = 0;
+        PlayerPrefs.SetInt("Storyholder", 0);
     }
 
     [ContextMenu("Diayalogu Oynat")]
@@ -50,6 +56,7 @@ public class DialogueManage : MonoBehaviour
         DialoguePanel.SetActive(true);
 
         currentDialogue++;
+        PlayerPrefs.SetInt("Storyholder", currentDialogue);
         
         Invoke(nameof(CloseDialogue), _audioSource.clip.length + 1f);
     }
@@ -71,6 +78,8 @@ public class DialogueManage : MonoBehaviour
     {
         isPlaying = false;
         DialoguePanel.SetActive(false);
+        if(StoryDialgouesLines[currentDialogue -1].sahneYukle != 0)
+            LoadingScreen.instance.LoadScene(StoryDialgouesLines[currentDialogue -1].sahneYukle);
     }
 }
 
@@ -82,4 +91,6 @@ public class DialogueLine
     public AudioClip voice;
     [TextArea(3,3)]
     public string Line;
+
+    public int sahneYukle;
 }
