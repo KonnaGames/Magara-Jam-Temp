@@ -1,20 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealhtSystem : MonoBehaviour
 {
     public static PlayerHealhtSystem Instance { get; set; }
 
-    [SerializeField] private int playerHealht = 3;
-    [SerializeField] private bool canDamaged = true;
+    [SerializeField] private bool canDamaged;
     [SerializeField] private Transform BossProjectileVFX;
     [SerializeField] private Transform ghostExplodeVFX;
     [SerializeField] private AudioClip deathSound;
 
+    private int playerHealht;
     private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
+        playerHealht = 3;
+        canDamaged = true;
     }
     private void OnTriggerEnter(Collider col)
     {
@@ -24,7 +30,7 @@ public class PlayerHealhtSystem : MonoBehaviour
             Destroy(col.gameObject);
             if (canDamaged)
             {
-                Dameged();
+                Damaged();
             }
         }
         if (col.gameObject.tag == "Ghost")
@@ -33,12 +39,14 @@ public class PlayerHealhtSystem : MonoBehaviour
             Destroy(col.gameObject);
             if (canDamaged)
             {
-                Dameged();
+                Damaged();
             }
         }
     }
-    private void Dameged()
+    private void Damaged()
     {
+        CameraShake3D.Shake(0.3f, 1f);
+
         canDamaged = false;
         StartCoroutine(CantTakeDamage());
         playerHealht -= 1;
@@ -57,10 +65,16 @@ public class PlayerHealhtSystem : MonoBehaviour
     {
         PlayerGunActivater.Instance.SetIsGunActive(false);
         SoundManager.instance.PlaySoundEffect(deathSound);
-        Time.timeScale = 0;
+        StartCoroutine(RestartingScene());
     }
     public int GetHealth()
     {
         return playerHealht;
+    }
+    private IEnumerator RestartingScene()
+    {
+        yield return new WaitForSeconds(5f);
+
+        SceneManager.LoadScene(5);
     }
 }

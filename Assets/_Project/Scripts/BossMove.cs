@@ -33,27 +33,30 @@ public class BossMove : MonoBehaviour
     }
     void Update()
     {
-        if (health <= 50)
+        if (PlayerHealhtSystem.Instance.GetHealth() > 0)
         {
-            StageTwo();
-        }
-        if (canShoot)
-        {
-            Shoot();
-            StartCoroutine(ShootTimer());
-            canShoot = false;
-        }
-        if (transform.position != transformPoints[currentPoint].position)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, transformPoints[currentPoint].position, speed * Time.deltaTime);
-        }
-        else
-        {
-            currentPoint = (currentPoint + 1) % transformPoints.Length;
-        }
-        if (health <= 0)
-        {
-            Destroy(gameObject);
+            if (health <= 50)
+            {
+                StageTwo();
+            }
+            if (canShoot)
+            {
+                Shoot();
+                StartCoroutine(ShootTimer());
+                canShoot = false;
+            }
+            if (transform.position != transformPoints[currentPoint].position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, transformPoints[currentPoint].position, speed * Time.deltaTime);
+            }
+            else
+            {
+                currentPoint = (currentPoint + 1) % transformPoints.Length;
+            }
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
     private void OnTriggerEnter(Collider col)
@@ -86,7 +89,7 @@ public class BossMove : MonoBehaviour
     }
     private void StageTwo()
     {
-        speed = 12;
+        speed = 10;
         if (canSpawn)
         {
             Debug.Log("StageTwo");

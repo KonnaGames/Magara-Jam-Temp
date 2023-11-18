@@ -15,6 +15,8 @@ public class PlayerMovement3D : MonoBehaviour
     [SerializeField] LayerMask ground;
     [SerializeField] float jumpHeight = 6f;
 
+    
+
     private float velocityY;
     private bool isGrounded;
     private bool canJump = true;
@@ -41,8 +43,11 @@ public class PlayerMovement3D : MonoBehaviour
 
     void Update()
     {
-        UpdateMouse();
-        UpdateMove();
+        if (PlayerHealhtSystem.Instance.GetHealth() > 0)
+        {
+            UpdateMouse();
+            UpdateMove();
+        }
     }
 
     private void UpdateMouse()
