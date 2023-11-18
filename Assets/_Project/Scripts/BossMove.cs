@@ -99,7 +99,7 @@ public class BossMove : MonoBehaviour
         Instantiate(ghostPrefab, ghostPoint1.position, Quaternion.identity);
         Instantiate(ghostPrefab, ghostPoint2.position, Quaternion.identity);
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
 
         canSpawn = true;
     }

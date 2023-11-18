@@ -55,7 +55,9 @@ public class PlayerHealhtSystem : MonoBehaviour
     }
     private void RestartGame()
     {
+        PlayerGunActivater.Instance.SetIsGunActive(false);
         SoundManager.instance.PlaySoundEffect(deathSound);
+        Time.timeScale = 0;
     }
     public int GetHealth()
     {
