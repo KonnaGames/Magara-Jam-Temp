@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class CameraLookAt : MonoBehaviour
 {
-    [SerializeField] private bool invert;
-
-    private Transform cameraTransform;
+    [SerializeField] private Transform playerTransform;
 
     private void Awake()
     {
-        cameraTransform = Camera.main.transform;
+        
     }
 
     private void LateUpdate()
     {
-        transform.LookAt(cameraTransform);
+        transform.LookAt(playerTransform);
     }
 
 }
