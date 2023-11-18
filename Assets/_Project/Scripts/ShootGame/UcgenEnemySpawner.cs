@@ -12,10 +12,19 @@ public class UcgenEnemySpawner : MonoBehaviour
     [SerializeField] private Transform SpawnPosX2;
     [SerializeField] private float spawnRate;
 
+    private bool isPlaying;
 
-    private void Start()
+
+    private void Update()
     {
-        StartSpawning();
+        if (isPlaying) return;
+        
+        
+        if (DialogueManage.instance.currentDialogue == 10)
+        {
+            StartSpawning();
+            isPlaying = true;
+        }
     }
 
     public void StartSpawning()

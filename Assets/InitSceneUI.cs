@@ -42,6 +42,7 @@ public class InitSceneUI : MonoBehaviour
     public void IlkSahneyiYukle()
     {
         OnPlayButtonClickedEvent?.Invoke();
+        PlayerPrefs.SetInt("LastPosInt",0);
         StartCoroutine(LoadScene(1));
     }
 

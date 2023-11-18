@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class MachineInteract1 : MonoBehaviour , IInteractable
+public class ArcadeMachineBolum2 : MonoBehaviour, IInteractable
 {
     public string interactionName { get; private set; }
 

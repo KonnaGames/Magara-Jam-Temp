@@ -34,6 +34,8 @@ public class PlayerMovement3D : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
+        transform.position = PlayerSpawnManager.instance.SetPlayerPositionBySpawnPoints();
+
         if (cursorLock)
         {
             Cursor.lockState = CursorLockMode.Locked;

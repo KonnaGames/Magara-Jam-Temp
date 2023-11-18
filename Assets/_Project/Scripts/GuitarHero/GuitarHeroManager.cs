@@ -76,8 +76,10 @@ public class GuitarHeroManager : MonoBehaviour
         if (_isGameFinished)
             return;
 
-            _heartCount--;
+            
+        _heartCount--;
         GuitarHeroViewManager.Instance.RemoveHeart();
+        DialogueManage.instance.StartCustomDialogue();
 
         if (_heartCount <= 0)
         {

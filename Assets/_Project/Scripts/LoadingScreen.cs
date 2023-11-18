@@ -28,13 +28,13 @@ public class LoadingScreen : MonoBehaviour
     public void LoadScene(string dialogue, int sceneBuildIndex)
     {
         text.text = dialogue;
-        StartCoroutine(StartFadeEffectCo(sceneBuildIndex,false));
+        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
     }
     
     public void LoadScene(int sceneBuildIndex)
     {
         text.text = "";
-        StartCoroutine(StartFadeEffectCo(sceneBuildIndex,false));
+        StartCoroutine(StartFadeEffectCo(sceneBuildIndex));
     }
 
     /// <summary>
@@ -42,8 +42,7 @@ public class LoadingScreen : MonoBehaviour
     /// </summary>
     public void LoadMainMenu()
     {
-        StartCoroutine(StartFadeEffectCo(1,false));
-        Invoke(nameof(DialogueManagerAktiveEt), 3f);
+        StartCoroutine(StartFadeEffectCo(1));
     }
 
     private void DialogueManagerAktiveEt()
@@ -51,15 +50,7 @@ public class LoadingScreen : MonoBehaviour
         DialogueManage.instance.StartStoryDialogue();
     }
 
-    
-    [ContextMenu("test")]
-    public void Test()
-    {
-        StartCoroutine(StartFadeEffectCo(1, true));
-    }
-
-
-    IEnumerator StartFadeEffectCo(int sceneBuildIndex, bool dialogueAc)
+    IEnumerator StartFadeEffectCo(int sceneBuildIndex)
     {
         VideoPlayer.Play();
         // Debug.Log(arkaPanel.color.a);
@@ -98,9 +89,5 @@ public class LoadingScreen : MonoBehaviour
         videoPanel.color = new Color(color.r, color.g, color.b, 0);
         // videoPanel.color = videoPanel.color;
         VideoPlayer.Stop();
-        
-        if(dialogueAc) Invoke(nameof(DialogueManagerAktiveEt), 1f);
-
-        yield break;
     }
 }

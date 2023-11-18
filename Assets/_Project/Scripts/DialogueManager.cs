@@ -9,6 +9,9 @@ public class DialogueManage : MonoBehaviour
 {
     public static DialogueManage instance;
     
+    public int TestAmacli;
+
+    
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private GameObject DialoguePanel;
     [SerializeField] private GameObject CustomDialoguePanel;
@@ -22,6 +25,7 @@ public class DialogueManage : MonoBehaviour
     
     public int currentDialogue;
     public bool isPlaying;
+
 
     private void Awake()
     {
@@ -41,7 +45,7 @@ public class DialogueManage : MonoBehaviour
         isPlaying = false;
         
         //TODO: Bu kismini savelemek lazim.
-        currentDialogue = 0;
+        currentDialogue = TestAmacli;
     }
 
     public void HikayeSifirla()
@@ -54,7 +58,6 @@ public class DialogueManage : MonoBehaviour
     {
         // Eger custom dialogue aciksa kapaticak
         CloseCustomDialogue();
-        
             
         if (isPlaying || currentDialogue > StoryDialgouesLines.Count - 1) return;
         
