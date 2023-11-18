@@ -9,7 +9,7 @@ public class PlayerHealhtSystem : MonoBehaviour
     [SerializeField] private int playerHealht = 3;
     [SerializeField] private bool canDamaged = true;
     [SerializeField] private Transform BossProjectileVFX;
-
+    [SerializeField] private Transform ghostExplodeVFX;
     [SerializeField] private AudioClip deathSound;
 
     private void Awake()
@@ -21,6 +21,15 @@ public class PlayerHealhtSystem : MonoBehaviour
         if (col.gameObject.tag == "DotProjectile")
         {
             Instantiate(BossProjectileVFX, transform.position, Quaternion.identity);
+            Destroy(col.gameObject);
+            if (canDamaged)
+            {
+                Dameged();
+            }
+        }
+        if (col.gameObject.tag == "Ghost")
+        {
+            Instantiate(ghostExplodeVFX, transform.position, Quaternion.identity);
             Destroy(col.gameObject);
             if (canDamaged)
             {

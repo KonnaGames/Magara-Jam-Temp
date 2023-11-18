@@ -5,6 +5,7 @@ using UnityEngine;
 public class GhostMove : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private Transform ghostExplodeVFX;
 
     private GameObject player;
     private void Start()
@@ -19,7 +20,13 @@ public class GhostMove : MonoBehaviour
     {
         if (col.gameObject.tag == "Bullet")
         {
+            Instantiate(ghostExplodeVFX, transform.position, Quaternion.identity);
             Destroy(col.gameObject);
+            Destroy(this.gameObject);
+        }
+        if (col.gameObject.tag == "Player")
+        {
+            Instantiate(ghostExplodeVFX, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

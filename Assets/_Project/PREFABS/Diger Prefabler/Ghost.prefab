@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7561042709168281425}
   - component: {fileID: 4764205173231219955}
   - component: {fileID: 6835127363274604498}
+  - component: {fileID: 3676462610835558556}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3167881768545542992}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.452835, y: -2.3169775, z: -13.392549}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d4f0a5fdfa893e41b5734fc423bd90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
+  ghostExplodeVFX: {fileID: 4051079841022577313, guid: b8106c9a4852bcb459f61461e2b05501, type: 3}
 --- !u!136 &6835127363274604498
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -62,7 +64,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -70,6 +72,27 @@ CapsuleCollider:
   m_Height: 1.4229187
   m_Direction: 1
   m_Center: {x: -0.009689629, y: 0.50064117, z: -0.028192759}
+--- !u!95 &3676462610835558556
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167881768545542992}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd715d08bcda19446bf3528dbdc030d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1447254888514487259
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1645,6 +1645,7 @@ MonoBehaviour:
   playerHealht: 3
   canDamaged: 1
   BossProjectileVFX: {fileID: 4051079841022577313, guid: 4ac193500480cc3418d80ddb5dc9ce0a, type: 3}
+  ghostExplodeVFX: {fileID: 0}
   deathSound: {fileID: 8300000, guid: f16e8b759e0cbf64ca5637a4bcd0dfeb, type: 3}
 --- !u!1001 &1258097025
 PrefabInstance:
@@ -2174,6 +2175,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2249474182425149983, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249474182425149983, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274a75a12c40d904f895f93f3d520759, type: 2}
+    - target: {fileID: 2249474182425149983, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274a75a12c40d904f895f93f3d520759, type: 2}
+    - target: {fileID: 2249474182425149983, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274a75a12c40d904f895f93f3d520759, type: 2}
+    - target: {fileID: 2249474182425149983, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274a75a12c40d904f895f93f3d520759, type: 2}
+    - target: {fileID: 2249474182425149983, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274a75a12c40d904f895f93f3d520759, type: 2}
+    - target: {fileID: 2249474182425149983, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274a75a12c40d904f895f93f3d520759, type: 2}
     - target: {fileID: 3845644312628926256, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.12500048
@@ -3073,6 +3102,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 49cafc5aa05297a4ca0f6128d48752ff, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 49cafc5aa05297a4ca0f6128d48752ff, type: 2}
+  - {fileID: 7400000, guid: e16bb3be4ff33a343b303a8a3712b028, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0

@@ -68,7 +68,7 @@ public class BossMove : MonoBehaviour
     }
     private void Damage()
     {
-        health -= 50;
+        health -= 10;
     }
     public float GetHealthNormalized()
     {
@@ -86,6 +86,7 @@ public class BossMove : MonoBehaviour
     }
     private void StageTwo()
     {
+        speed = 12;
         if (canSpawn)
         {
             Debug.Log("StageTwo");
