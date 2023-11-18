@@ -3,22 +3,7 @@ guid: 416826de7119d13479712c9241112693
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Chomp_MAT
-    second: {fileID: 2100000, guid: 9683d312d71a7c6469ef0ae0ded29508, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Eye
-    second: {fileID: 2100000, guid: a712f71db64ca224194964fe9e8b31f6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: dab85ae1b8619534d9c273700ad3d7b7, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -31,8 +16,7 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'LeftUpperLeg' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -40,7 +24,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -70,8 +54,8 @@ ModelImporter:
     weldVertices: 1
     bakeAxisConversion: 0
     preserveHierarchy: 0
-    skinWeightsMode: 1
-    maxBonesPerVertex: 2
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
     meshOptimizationFlags: -1
@@ -98,42 +82,7 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton:
-    - name: Chomp_Mesh(Clone)
-      parentName: 
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Chomp_Mesh
-      parentName: Chomp_Mesh(Clone)
-      position: {x: -3.556183e-17, y: 0.020388521, z: 0.16005015}
-      rotation: {x: -0.13996986, y: 3.6168953e-24, z: -3.1079545e-17, w: 0.99015576}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SALDIRI
-      parentName: Chomp_Mesh(Clone)
-      position: {x: 0.0039562783, y: 0.57629704, z: 0.007910192}
-      rotation: {x: -0.7991195, y: 2.1976553e-17, z: -2.1976551e-17, w: 0.60117227}
-      scale: {x: 100, y: 100.00001, z: 100.00001}
-    - name: Bone.001
-      parentName: SALDIRI
-      position: {x: -4.6381445e-12, y: 0.0010492062, z: 0.0013386002}
-      rotation: {x: 0.035347555, y: 0.41808355, z: 0.907546, w: 0.017807027}
-      scale: {x: 1, y: 0.9999997, z: 0.99999994}
-    - name: Bone.001_end
-      parentName: Bone.001
-      position: {x: -0, y: 0.006392103, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bone.002
-      parentName: SALDIRI
-      position: {x: -2.9722895e-19, y: 0.0010492061, z: 0.0013386002}
-      rotation: {x: -0.00447689, y: -0.73996025, z: 0.6718928, w: -0.031605236}
-      scale: {x: 1, y: 0.9999997, z: 0.99999875}
-    - name: Bone.002_end
-      parentName: Bone.002
-      position: {x: -0, y: 0.006742071, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+    skeleton: []
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -142,15 +91,15 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: Chomp_Mesh
+    rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
