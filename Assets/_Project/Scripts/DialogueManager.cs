@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class DialogueManage : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class DialogueManage : MonoBehaviour
     
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private GameObject DialoguePanel;
+    [SerializeField] private GameObject CustomDialoguePanel;
     [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private TextMeshProUGUI customText;
     
     public List<DialogueLine> StoryDialgouesLines;
     public List<DialogueLine> CustomDialogueLines;
@@ -78,23 +81,37 @@ public class DialogueManage : MonoBehaviour
         StartStoryDialogue();
     }
 
-    public void StartCustomDialogue(int dialogueIndex)
+    /// <summary>
+    /// Random Dalga Gecme Diyaloglari
+    /// </summary>
+    public void StartCustomDialogue()
     {
         if (isPlaying) return;
+
+        int randomInt = Random.Range(0, CustomDialogueLines.Count);
+        
+        
         
         isPlaying = true;
-        _audioSource.clip = StoryDialgouesLines[dialogueIndex].voice;
+        _audioSource.clip = CustomDialogueLines[randomInt].voice;
         _audioSource.Play();
-        text.text = StoryDialgouesLines[dialogueIndex].Line;
-        DialoguePanel.SetActive(true);
+        customText.text = CustomDialogueLines[randomInt].Line;
+        CustomDialoguePanel.SetActive(false);
         
-        Invoke(nameof(CloseDialogue), _audioSource.clip.length + 1f);
+        Invoke(nameof(CloseCustomDialogue), _audioSource.clip.length + 1f);
     }
 
     private void CloseDialogue()
     {
         isPlaying = false;
         DialoguePanel.SetActive(false);
+    }
+
+
+    private void CloseCustomDialogue()
+    {
+        isPlaying = false;
+        CustomDialoguePanel.SetActive(false);
     }
 }
 
