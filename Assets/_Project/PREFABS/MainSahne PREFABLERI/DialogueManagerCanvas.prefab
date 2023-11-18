@@ -427,19 +427,7 @@ MonoBehaviour:
           m_CallState: 2
     dialogueSonundakiEvent:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: PlayerSpawnManager, Assembly-CSharp
-          m_MethodName: SpawnPointArttir
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
     voice: {fileID: 8300000, guid: 8c5d352b27d6b8f48a174bbc514d5f00, type: 3}
     Line: "Ho\u015F geldin John. Umar\u0131m iyisindir."

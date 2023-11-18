@@ -97,14 +97,14 @@ public class DialogueManage : MonoBehaviour
                 Invoke(nameof(CloseDialogue), 3f);
             }
         }
-       
-        currentDialogue++;
     }
 
 
     private void ContinueDialogue()
     {
         isPlaying = false;
+        StoryDialgouesLines[currentDialogue].dialogueSonundakiEvent?.Invoke();
+        currentDialogue++; 
         StartStoryDialogue();
     }
 
@@ -133,7 +133,8 @@ public class DialogueManage : MonoBehaviour
     {
         isPlaying = false;
         DialoguePanel.SetActive(false);
-        StoryDialgouesLines[currentDialogue - 1].dialogueSonundakiEvent?.Invoke();
+        StoryDialgouesLines[currentDialogue].dialogueSonundakiEvent?.Invoke();
+        currentDialogue++;
     }
 
     private void CloseCustomDialogue()

@@ -34,6 +34,7 @@ public class PlayerMovement3D : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
+        Debug.Log("Player Start Calisti");
         transform.position = PlayerSpawnManager.instance.SetPlayerPositionBySpawnPoints();
 
         if (cursorLock)

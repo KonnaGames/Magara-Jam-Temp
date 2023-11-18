@@ -20,13 +20,15 @@ public class PlayerSpawnManager : MonoBehaviour
     
     private void Start()
     {
+        Debug.Log("Player Spawn Start Calisti");
         lastPosInt = PlayerPrefs.GetInt("LastPosInt");
+        Debug.Log(lastPosInt + " +++");
     }
 
     public Vector3 SetPlayerPositionBySpawnPoints()
     {
-        if (lastPosInt > SpawnPoints.Count - 1) return SpawnPoints[lastPosInt - 1].position;
-        
+        // if (lastPosInt > SpawnPoints.Count - 1) return SpawnPoints[lastPosInt - 1].position;
+        Debug.Log(SpawnPoints[lastPosInt].position);
         return SpawnPoints[lastPosInt].position;
     }
 
@@ -34,7 +36,11 @@ public class PlayerSpawnManager : MonoBehaviour
     {
         Debug.Log("Spawn Arttir Test");
         lastPosInt = PlayerPrefs.GetInt("LastPosInt");
-        PlayerPrefs.SetInt("LastPosInt", lastPosInt + 1);
+        lastPosInt++;
+        PlayerPrefs.SetInt("LastPosInt", lastPosInt);
+        
+        Debug.Log(lastPosInt + " last Pos");
+        Debug.Log(PlayerPrefs.GetInt("LastPosInt") + " saved one");
     }
 
     [ContextMenu("RestartSpawnPos")]
