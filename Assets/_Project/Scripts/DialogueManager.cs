@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueManage : MonoBehaviour
 {
     public static DialogueManage instance;
-    
     
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private GameObject DialoguePanel;
@@ -35,13 +35,17 @@ public class DialogueManage : MonoBehaviour
         isPlaying = false;
         
         //TODO: Bu kismini savelemek lazim.
-        currentDialogue = PlayerPrefs.GetInt("StoryHolder");
+        currentDialogue = 0;
+
+        if (currentDialogue == 0)
+        {
+            StartStoryDialogue();
+        }
     }
 
     public void HikayeSifirla()
     {
         currentDialogue = 0;
-        PlayerPrefs.SetInt("Storyholder", 0);
     }
 
     [ContextMenu("Diayalogu Oynat")]
@@ -52,13 +56,26 @@ public class DialogueManage : MonoBehaviour
         isPlaying = true;
         _audioSource.clip = StoryDialgouesLines[currentDialogue].voice;
         _audioSource.Play();
-        text.text = StoryDialgouesLines[currentDialogue].Line;
         DialoguePanel.SetActive(true);
+        text.text = StoryDialgouesLines[currentDialogue].Line;
 
+        StoryDialgouesLines[currentDialogue].myEvent?.Invoke();
+
+        if (StoryDialgouesLines[currentDialogue].tartismaID == StoryDialgouesLines[currentDialogue + 1].tartismaID)
+            Invoke(nameof(ContinueDialogue), 2f);
+        else
+        {
+            Invoke(nameof(CloseDialogue), 2);
+        }
+       
         currentDialogue++;
-        PlayerPrefs.SetInt("Storyholder", currentDialogue);
-        
-        Invoke(nameof(CloseDialogue), _audioSource.clip.length + 1f);
+    }
+
+
+    private void ContinueDialogue()
+    {
+        isPlaying = false;
+        StartStoryDialogue();
     }
 
     public void StartCustomDialogue(int dialogueIndex)
@@ -73,13 +90,11 @@ public class DialogueManage : MonoBehaviour
         
         Invoke(nameof(CloseDialogue), _audioSource.clip.length + 1f);
     }
-    
+
     private void CloseDialogue()
     {
         isPlaying = false;
         DialoguePanel.SetActive(false);
-        if(StoryDialgouesLines[currentDialogue -1].sahneYukle != 0)
-            LoadingScreen.instance.LoadScene(StoryDialgouesLines[currentDialogue -1].sahneYukle);
     }
 }
 
@@ -92,5 +107,10 @@ public class DialogueLine
     [TextArea(3,3)]
     public string Line;
 
-    public int sahneYukle;
+    public int tartismaID;
+
+    public MyEvent myEvent;
 }
+
+[Serializable]
+public class MyEvent : UnityEvent {}

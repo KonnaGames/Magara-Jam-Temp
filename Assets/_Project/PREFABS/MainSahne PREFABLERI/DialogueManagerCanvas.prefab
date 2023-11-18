@@ -67,15 +67,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bu Bir Testtir.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
+  m_sharedMaterial: {fileID: -1082527664289858156, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -191,21 +191,132 @@ MonoBehaviour:
   DialoguePanel: {fileID: 8742134931948649984}
   text: {fileID: 5907743947176950083}
   StoryDialgouesLines:
-  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
     voice: {fileID: 8300000, guid: a5a7b2311d6886f499d19109680b0f1d, type: 3}
-    Line: Hadi ama Jhon.. Bunu basarabilirsin, Sana inaniyorum.
+    Line: "H\u0131h ne. Buras\u0131 neresi"
+    tartismaID: 1
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
     voice: {fileID: 8300000, guid: c34fbd105d0c9894eabef61d64129182, type: 3}
-    Line: Eee Jhon bolumu gecmeyi planliyor musun? Yoksa.. Benim vaktim senin 10
-      yil kadar burada duracak kadar vaktin var mi? Bitir artik su bolumude gecelim
+    Line: "Ho\u015F geldin John. Umar\u0131m iyisindir."
+    tartismaID: 1
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Sende kimsin noluyor lan burda.\r"
+    tartismaID: 1
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
     voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
-    Line: Sonunda be Jhon eyyshhhh... Bir an gercekten sonsuza kadar burada kalacaksin
-      sanmistim.
-  CustomDialogueLines:
-  - actor: {fileID: 0}
-    voice: {fileID: 0}
-    Line: 
+    Line: "Sakin ol John bo\u015Funa kendini yoruyorsun.\r"
+    tartismaID: 1
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ne sakin olmas\u0131 sen kimsin ad\u0131m\u0131 nerden biliyorsun\r\n\r"
+    tartismaID: 1
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Bana \u015Fimdilik makine de John dahas\u0131n\u0131 sonra \xF6\u011Frenirsin.
+      Ben sadece e\u011Flenmek istiyorum.\r"
+    tartismaID: 1
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Hadi baslayalim.\r"
+    tartismaID: 1
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ne oluyor be\r"
+    tartismaID: 2
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "\u015Eimdi seninle ufak bir oyun oynayaca\u011F\u0131z john. \u015Eu \xFC\xE7geni
+      g\xF6r\xFCyormusun o sensin. Kar\u015F\u0131dan gelen d\xFC\u015Fmanlar\u0131
+      vur yeter. Klasik bunu ba\u015Farabilirmisin bilmiyorum. Dosyanda zekan\u0131n
+      biraz k\u0131t oldu\u011Fu yaz\u0131yordu.\r\r"
+    tartismaID: 2
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ne dosyas\u0131 ne oyunu siz benimle dalga m\u0131 ge\xE7iyorsunuz.\r\r"
+    tartismaID: 2
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "John daha fazla ba\u011F\u0131rmaya devam edersen sinirlenmeye ba\u015Flayaca\u011F\u0131m.
+      Hadi kuzucum \u015Fu oyunu ge\xE7 art\u0131k\r\r"
+    tartismaID: 2
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Tamam hadi \xE7\u0131kar beni buradan\r\r"
+    tartismaID: 3
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Aaaa \xE7ok ay\u0131p john. Daha yeni geldin. Hem bak \xF6n\xFCm\xFCzde
+      daha \xE7ok oyun var.\r\r\r"
+    tartismaID: 3
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Yeter art\u0131k bari ne oldu\u011Funu s\xF6yle\r\r\r"
+    tartismaID: 3
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "S\xF6yledim ya ben bir makineyim. Hadi art\u0131k yeni oyun vakti.\r\r\r\r"
+    tartismaID: 3
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Dur\r\r\r\r"
+    tartismaID: 3
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Hah \xE7ok ge\xE7\r\r\r\r"
+    tartismaID: 3
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  CustomDialogueLines: []
   currentDialogue: 0
   isPlaying: 0
 --- !u!82 &6292622798503978299
@@ -426,15 +537,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: c4a149bf42686d7428a3378b2d0be398, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
