@@ -24,12 +24,6 @@ public class GunController : MonoBehaviour
             Shoot();
             StartCoroutine(ShootLimiter());
         }
-        if (Input.GetMouseButton(1) && canShoot)
-        {
-            canShoot = false;
-            ShootRight();
-            StartCoroutine(ShootLimiter());
-        }
     }
     void Shoot()
     {
@@ -54,29 +48,9 @@ public class GunController : MonoBehaviour
     }
     private IEnumerator ShootLimiter()
     {
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.5f);
 
         canShoot = true;
-    }
-    private void ShootRight()
-    {
-        CameraShake3D.Shake(0.5f, 0.4f);
-        GunRecoil();
-
-        SoundManager.instance.PlaySoundEffect(fireAudio);
-
-        GameObject bulletRight = Instantiate(bulletPrefabRight, shootPoint.position, shootPoint.rotation);
-        Ray ray = Camera.main.ScreenPointToRay(cross.position);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, 300, layer))
-        {
-            Vector3 direction = hit.point - shootPoint.position;
-            direction.Normalize();
-
-            bulletRight.GetComponent<Rigidbody>().AddForce(direction * bulletSpeed, ForceMode.Impulse);
-            Destroy(bulletRight, 1);
-        }
     }
     private void GunRecoil()
     {

@@ -14,7 +14,10 @@ public class GhostMove : MonoBehaviour
     }
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        if (PlayerHealhtSystem.Instance.GetHealth() > 0)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        }
     }
     private void OnTriggerEnter(Collider col)
     {
