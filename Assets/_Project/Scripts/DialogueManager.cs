@@ -43,7 +43,7 @@ public class DialogueManage : MonoBehaviour
 
         if (currentDialogue == 0)
         {
-            // StartStoryDialogue();
+            StartStoryDialogue();
         }
     }
 
@@ -63,7 +63,6 @@ public class DialogueManage : MonoBehaviour
         DialoguePanel.SetActive(true);
         text.text = StoryDialgouesLines[currentDialogue].Line;
 
-        StoryDialgouesLines[currentDialogue].myEvent?.Invoke();
 
         if (StoryDialgouesLines[currentDialogue].tartismaID == StoryDialgouesLines[currentDialogue + 1].tartismaID)
             Invoke(nameof(ContinueDialogue), 2f);
@@ -104,6 +103,7 @@ public class DialogueManage : MonoBehaviour
     {
         isPlaying = false;
         DialoguePanel.SetActive(false);
+        StoryDialgouesLines[currentDialogue - 1].myEvent?.Invoke();
     }
 
 
@@ -125,8 +125,5 @@ public class DialogueLine
 
     public int tartismaID;
 
-    public MyEvent myEvent;
+    public UnityEvent myEvent;
 }
-
-[Serializable]
-public class MyEvent : UnityEvent {}
