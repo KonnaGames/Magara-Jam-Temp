@@ -9,8 +9,6 @@ public class BossMove : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform[] transformPoints;
-    [SerializeField] private Transform mouthPoint;
-    [SerializeField] private Transform projectilePrefab;
     [SerializeField] private Transform bulletVfx;
     [SerializeField] private float speed;
     [SerializeField] private float projectileSpeed;
@@ -70,10 +68,8 @@ public class BossMove : MonoBehaviour
         return (float)health / healthMax;
     }
     private void Shoot()
-    {
-        animator.SetTrigger("Shoot");
-
-        Instantiate(projectilePrefab, mouthPoint.position, mouthPoint.rotation);       
+    {        
+        animator.SetTrigger("Shoot");     
     }
     private IEnumerator ShootTimer()
     {
@@ -83,8 +79,9 @@ public class BossMove : MonoBehaviour
     }
     private IEnumerator AnimationDelay()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
 
         intantiateAllowed = true;
     }
+    
 }
