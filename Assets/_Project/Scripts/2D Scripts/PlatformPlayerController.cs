@@ -23,6 +23,11 @@ public class PlatformPlayerController : MonoBehaviour
     
     private int colorID;
 
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip jumpEffect;
+    [SerializeField] private AudioClip pickKeyEffect;
+    [SerializeField] private AudioClip doorOpenEffect;
+
     private void Start()
     {
         colorID = 0;
@@ -31,6 +36,7 @@ public class PlatformPlayerController : MonoBehaviour
         isMoveing = true;
 
         _animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         _particleSystem = GetComponentInChildren<ParticleSystem>();
         tailMaterial.color = Color.white;
     }
@@ -44,6 +50,7 @@ public class PlatformPlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("key"))
         {
+            audioSource.PlayOneShot(pickKeyEffect);
             body.color = collision.gameObject.GetComponent<SpriteRenderer>().color;
             colorID = collision.gameObject.GetComponent<Keys>().keyId;
             _particleSystem.startColor = body.color;
@@ -66,6 +73,7 @@ public class PlatformPlayerController : MonoBehaviour
         {
             if (colorID == collision.gameObject.GetComponent<Door>().doorId)
             {
+                audioSource.PlayOneShot(doorOpenEffect);
                 _particleSystem.Play();
                 Destroy(collision.collider.gameObject);
             }
@@ -76,25 +84,28 @@ public class PlatformPlayerController : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && !isMoveing)
         {
+            audioSource.PlayOneShot(jumpEffect);
             moveDirection = new Vector2(0, 1);
             transform.rotation = Quaternion.Euler(0, 0, 180);
         }
         else if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && !isMoveing)
         {
+            audioSource.PlayOneShot(jumpEffect);
             moveDirection = new Vector2(0, -1);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && !isMoveing)
         {
+            audioSource.PlayOneShot(jumpEffect);
             moveDirection = new Vector2(-1, 0);
             transform.rotation = Quaternion.Euler(0, 0, 90);
         }
         else if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && !isMoveing)
         {
+            audioSource.PlayOneShot(jumpEffect);
             moveDirection = new Vector2(1, 0);
             transform.rotation = Quaternion.Euler(0, 0, -90);
         }
-
         Move(moveDirection);
     }
 
@@ -144,6 +155,7 @@ public class PlatformPlayerController : MonoBehaviour
         {
             if(colorID == hit.collider.gameObject.GetComponent<Door>().doorId)
             {
+                audioSource.PlayOneShot(doorOpenEffect);
                 hit.collider.gameObject.layer = default;
                 hit.collider.gameObject.GetComponent<Collider2D>().isTrigger = true;            
             }
