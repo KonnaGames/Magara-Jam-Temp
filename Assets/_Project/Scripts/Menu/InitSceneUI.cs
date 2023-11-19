@@ -30,7 +30,7 @@ public class InitSceneUI : MonoBehaviour
 
     private void Start()
     {
-        soundVolume = 0.5f;
+        soundVolume = 0.3f;
         isOpenSettingsPanel = false;
         settingsPanel.SetActive(false);
     }
