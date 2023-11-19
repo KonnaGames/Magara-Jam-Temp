@@ -3,6 +3,10 @@ using DG.Tweening;
 
 public class CreditsUI : MonoBehaviour
 {
+    public static CreditsUI Instance { get; set; }
+
+    public static bool showCredits = false;
+
     //Game Name
     public RectTransform objectToScale;
     public Vector3 targetScale = new Vector3(2f, 2f, 2f);
@@ -10,26 +14,32 @@ public class CreditsUI : MonoBehaviour
 
     //
     public RectTransform objectToSlide;
-    public float slideDistance = 900f;
-    public float duration = 1.0f;
+    public float slideDistance = -900f;
+    public float duration = 3.0f;
 
 
     private void Start()
     {
-        SlideDown();
+        if (showCredits)
+        {
+            SlideDown();
+        }
     }
 
     private void Update()
     {
-        ShrinkObject();
+        if(showCredits)
+        {
+            ShrinkObject();
+        }
     }
 
-    public void ShrinkObject()
+    private void ShrinkObject()
     {
         objectToScale.DOScale(targetScale, gameNameDuration);
     }
 
-    public void SlideDown()
+    private void SlideDown()
     {
         Vector3 startPos = objectToSlide.anchoredPosition3D;
         Vector3 endPos = startPos - new Vector3(0f, slideDistance, 0f);
