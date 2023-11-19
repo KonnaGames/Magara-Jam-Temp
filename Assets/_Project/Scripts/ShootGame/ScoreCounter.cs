@@ -10,8 +10,8 @@ public class ScoreCounter : MonoBehaviour
 
     private void Start()
     {
-        score = 10;
-        text.text = "Collect " + score.ToString() + " Stars";
+        score = 20;
+        text.text = score.ToString() + " Yıldız Patlat";
     }
 
     private void OnEnable()
