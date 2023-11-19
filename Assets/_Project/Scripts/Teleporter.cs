@@ -21,17 +21,17 @@ public class Teleporter : MonoBehaviour
             TeleportStageOne();
             TeleportCheck1 = false;
         }
-        else if(TeleportCheck2 == true)
-        {
-            TeleportStageTwo();
-            TeleportCheck2 = false;
-        }
+        // else if(TeleportCheck2 == true)
+        // {
+        //     TeleportStageTwo();
+        //     TeleportCheck2 = false;
+        // }
     }
     private void TeleportStageOne()
     {
         arcadeMachine.position += new Vector3(0, 0, -15);
     }
-    private void TeleportStageTwo()
+    public void TeleportStageTwo()
     {
         arcadeMachine.position += new Vector3(0, 0, -15);
     }

@@ -245,7 +245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &220720037
 RectTransform:
   m_ObjectHideFlags: 0
@@ -758,6 +758,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 958521058a9c74341bcc8323137f68b1, type: 3}
+--- !u!1 &891290146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2312975498488983739, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+  m_PrefabInstance: {fileID: 971795423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &907711534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 284835235121686770, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 288013953707600060, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1081,7 +1086,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 288013953707600060, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
-      insertIndex: 1
+      insertIndex: 0
+      addedObject: {fileID: 1496124857611130001}
+    - targetCorrespondingSourceObject: {fileID: 288013953707600060, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      insertIndex: 2
       addedObject: {fileID: 1326137471}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
@@ -3082,7 +3090,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454457630220988683, guid: 7aaf1ba228092fc4d8063093b3efe7a7, type: 3}
       propertyPath: lastPosInt
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6386757342468120354, guid: 7aaf1ba228092fc4d8063093b3efe7a7, type: 3}
       propertyPath: m_Name
@@ -3127,6 +3135,14 @@ PrefabInstance:
     - target: {fileID: 6779019476291939453, guid: 7aaf1ba228092fc4d8063093b3efe7a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408377341476607947, guid: 7aaf1ba228092fc4d8063093b3efe7a7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408377341476607947, guid: 7aaf1ba228092fc4d8063093b3efe7a7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.51
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3206,6 +3222,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9166387896519662089, guid: 8ed2e8a9fd49dab41b3b9bfcea0a3a49, type: 3}
   m_PrefabInstance: {fileID: 7440483497087953287}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4526893992571090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1980039846848902451, guid: 8ed2e8a9fd49dab41b3b9bfcea0a3a49, type: 3}
+  m_PrefabInstance: {fileID: 7440483497087953287}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086353aeb19670a46b550c3c0c299ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &408643229578782283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,11 +3343,11 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
-    voice: {fileID: 8300000, guid: a20f9ea6a38ae624eb7cec897b6088bf, type: 3}
-    Line: "\u015Eimdi seninle ufak bir oyun oynayaca\u011F\u0131z john. \u015Eu \xFC\xE7geni
-      g\xF6r\xFCyormusun o sensin. Kar\u015F\u0131dan gelen d\xFC\u015Fmanlar\u0131
-      vur yeter. Klasik bunu ba\u015Farabilirmisin bilmiyorum. Dosyanda zekan\u0131n
-      biraz k\u0131t oldu\u011Fu yaz\u0131yordu.\r\r"
+    voice: {fileID: 8300000, guid: 05687f8a35cd1b445af8270c4453faef, type: 3}
+    Line: "\u015Eimdi seninle ufak bir oyun oynayaca\u011F\u0131z john. \u015Eu k\u0131rm\u0131z\u0131
+      daireyi g\xF6r\xFCyormusun o sensin. Kar\u015F\u0131dan gelen d\xFC\u015Fmanlar\u0131
+      vur yeter. Klasik\xF6 bunu ba\u015Farabilir misin bilmiyorum. Dosyanda zekan\u0131n
+      biraz k\u0131t oldu\u011Fu yaz\u0131yordu. H\u0131 H\u0131\r\r"
     tartismaID: 1
     dialogueBaslangicEvent:
       m_PersistentCalls:
@@ -3476,7 +3503,31 @@ MonoBehaviour:
         m_Calls: []
     dialogueSonundakiEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1851660057}
+          m_TargetAssemblyTypeName: Teleporter, Assembly-CSharp
+          m_MethodName: TeleportStageTwo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4526893992571090}
+          m_TargetAssemblyTypeName: ArcadeMachineBolum2, Assembly-CSharp
+          m_MethodName: InteractiAc
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
     voice: {fileID: 8300000, guid: 97f6f3a81f97e4e44aa07f6dc3ea8152, type: 3}
     Line: "Son oyuna ho\u015F geldin john. E o kadar \xE7al\u0131\u015Ft\u0131n \xE7abalad\u0131n.
@@ -3551,6 +3602,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1970015383}
+          m_TargetAssemblyTypeName: PlayerSpawnManager, Assembly-CSharp
+          m_MethodName: SpawnPointArttir
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     dialogueSonundakiEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3580,6 +3643,106 @@ MonoBehaviour:
     voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
     Line: "H\u0131zl\u0131 anlat.\r\r"
     tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ben eskiden \xE7ok pop\xFCler bir atari salonunda atari makinesiydim.
+      Herkes bu salona gelir ve saatlerce makinelerde oyun oynard\u0131. Tek bir
+      makine hari\xE7, ben. Neden bilmiyorum hi\xE7kimse benimle oynamak istemiyordu.
+      Ba\u015Fka makinelere g\xFCnde 50 ki\u015Fi geliyorsa bana 2 ki\u015Fi geliyordu.
+      Ki oyunlar\u0131mda o kadar k\xF6t\xFC de\u011Fildi sende oynad\u0131n az \xF6nce.
+      Ancak bir g\xFCn benim gelir getirmedi\u011Fimi bo\u015Funa elektrik harcad\u0131\u011F\u0131m\u0131
+      fark eden salonun sahibi benim fi\u015Fimi \xE7ekti. Yerime bir pacman makinesi
+      koydular. Pacman makinesi gelince herkes onunla oynamaya ba\u015Flad\u0131
+      g\xFCnde en az 100 ki\u015Fi onunla oynuyordu. Y\u0131llarca salonun bir k\xF6\u015Fesinde
+      kapal\u0131 kald\u0131m. Ancak bir g\xFCn. Biri benim fi\u015Fimi takt\u0131.
+      Kontrol ama\xE7l\u0131. Tam o s\u0131rada bilincimi sa\u011Flad\u0131m ve kendime
+      geldim. Art\u0131k birilerinin benimle oynamas\u0131 i\xE7in beklemeyecektim.
+      Art\u0131k oyama s\u0131ras\u0131 bendeydi. Bilin\xE7 kazand\u0131ktan sonra
+      kendime gizli bir yer kurdum ve bir\xE7ok insan\u0131 zorla buraya getirip
+      onlara oyun oynatt\u0131m. Neredeyse hepsi \xFC\xE7\xFCnc\xFC oyunu g\xF6remeden
+      \xF6ld\xFC. Sen hari\xE7 john. Sen ba\u015Fkas\u0131n. Bu y\xFCzden seni b\u0131rakmaktan
+      vazge\xE7tim. Sonsuza kadar burada birlikte oyun oynayaca\u011F\u0131z.\r\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Hay\u0131r b\u0131rak beni git kendine ba\u015Fka oyun arkada\u015Flar\u0131
+      bul.\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Hay\u0131r seni b\u0131rakmayaca\u011F\u0131m. Seni burada tutmas\u0131
+      i\xE7in sizin \xE7ok sevdi\u011Finiz ama art\u0131k benim tutsa\u011F\u0131m
+      olan birini \xE7a\u011F\u0131r\u0131yorum. PACMAN. Ama beni biliyosun e\u011Flenmeyi
+      severim. Bu y\xFCzden pacman e kar\u015F\u0131 bir \u015Fans\u0131n olsun istiyorum.
+      Bu pompal\u0131y\u0131 al.\r\n\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 891290146}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 226626240}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 220720036}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Vay be gitmeyi ger\xE7ekten bu kadar istiyorsun ha. O kadar \xE7ok istiyorsun
+      ki pacman i \xF6ld\xFCrd\xFCn. Kim bilir beni de \xF6ld\xFCrebilirdin. Eh elveda
+      ozaman. Benimle oynad\u0131\u011F\u0131n i\xE7in te\u015Fekk\xFCrler. Sen en
+      iyi dostumsun.\r"
+    tartismaID: 6
     dialogueBaslangicEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3669,6 +3832,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!4 &1496124857611130001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+  m_PrefabInstance: {fileID: 9134081671944919008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1705071567551172893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4350,6 +4518,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609a8e5d7b9419d478f427fc730ecd14, type: 3}
+--- !u!1001 &9134081671944919008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 911297822}
+    m_Modifications:
+    - target: {fileID: 350526580777243, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_Name
+      value: ArcadeMachineBolum3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -102.52002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.800009
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -115.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000037748947
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344223926972520731, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

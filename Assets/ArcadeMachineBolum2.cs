@@ -21,4 +21,9 @@ public class ArcadeMachineBolum2 : MonoBehaviour, IInteractable
         DialogueManage.instance.StartStoryDialogue();
         isInteracted = true;
     }
+
+    public void InteractiAc()
+    {
+        isInteracted = false;
+    }
 }
