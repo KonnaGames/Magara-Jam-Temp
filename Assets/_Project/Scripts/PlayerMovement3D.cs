@@ -16,45 +16,52 @@ public class PlayerMovement3D : MonoBehaviour
     [SerializeField] LayerMask ground;
     [SerializeField] float jumpHeight = 6f;
 
-    
-
     private float velocityY;
     private bool isGrounded;
     private bool canJump = true;
+    private bool _isStandUp = false;
 
     private float cameraCap;
     private Vector2 currentMouseDelta;
     private Vector2 currentMouseDeltaVelocity;
 
+    private Animator _animator;
     private CharacterController controller;
     private Vector2 currentDir;
     private Vector2 currentDirVelocity;
     private Vector3 velocity;
 
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
-
+        _animator.SetTrigger("standUp");
         Debug.Log("Player Start Calisti");
         transform.position = PlayerSpawnManager.instance.SetPlayerPositionBySpawnPoints();
 
-        Invoke(nameof(ActivateController), 1);
 
         if (cursorLock)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
         }
+
+        //ActivateController();
     }
 
-    private void ActivateController()
+    public void ActivateController()
     {
         controller.enabled = true;
+        _isStandUp = true;
     }
 
     void Update()
     {
-        if (PlayerHealhtSystem.Instance.GetHealth() > 0)
+        if (PlayerHealhtSystem.Instance.GetHealth() > 0 && _isStandUp)
         {
             UpdateMouse();
             UpdateMove();

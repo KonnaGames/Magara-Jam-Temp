@@ -25,6 +25,7 @@ public class InteractionController : MonoBehaviour
     {
         interactable1 = null;
         Ray r = new Ray(interactorSource.position, interactorSource.forward);
+
         if (Physics.Raycast(r, out RaycastHit hitObject, interactRange))
         {
             if (hitObject.collider.gameObject.TryGetComponent(out IInteractable interactable))

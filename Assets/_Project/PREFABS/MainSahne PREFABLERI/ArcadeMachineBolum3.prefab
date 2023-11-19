@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e313fc6ad075c5d489e80cdf4faac612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mouth: {fileID: 4042580438917118603}
+  _mouthAnimator: {fileID: 417006481706445574}
 --- !u!114 &-6822449226969735591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680d75ac9259613499cf18774df2d4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactinName2: 
 --- !u!1 &403608047117117263
 GameObject:
   m_ObjectHideFlags: 0

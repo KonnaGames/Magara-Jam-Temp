@@ -6,7 +6,7 @@ public class MachineFaceManager : MonoBehaviour
 {
     public static MachineFaceManager _instance;
 
-    [SerializeField] private SpriteRenderer _mouth;
+    [SerializeField] private Animator _mouthAnimator;
 
 
     private void Awake()
@@ -18,12 +18,14 @@ public class MachineFaceManager : MonoBehaviour
 
     public static void StartTalking()
     {
-        _instance._mouth.GetComponent<Animator>().SetBool("isTalking", true);
+        if(_instance != null)
+            _instance._mouthAnimator.SetBool("isTalking", true);
     }
 
     public static void StopTalking()
     {
-        _instance._mouth.GetComponent<Animator>().SetBool("isTalking", false);
+        if (_instance != null)
+            _instance._mouthAnimator.SetBool("isTalking", false);
     }
 
 }

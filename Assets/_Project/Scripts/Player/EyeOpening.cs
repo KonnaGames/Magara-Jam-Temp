@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class EyeOpening : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class EyeOpening : MonoBehaviour
 
     private void StartEyeOpening()
     {
+        _top.GetComponent<Image>().enabled = true;
+        _bottom.GetComponent<Image>().enabled = true;
+
         Sequence sequence = DOTween.Sequence();
         Tweener tweener1 = _top.transform.DOLocalMoveY(-300, 1);
         Tweener tweener2 = _bottom.transform.DOLocalMoveY(300, 1);

@@ -15,6 +15,7 @@ public class PlayerSpawnManager : MonoBehaviour
         else if(instance != this) Destroy(this.gameObject);
         
         DontDestroyOnLoad(this.gameObject);
+
     }
     
     public Vector3 SetPlayerPositionBySpawnPoints()

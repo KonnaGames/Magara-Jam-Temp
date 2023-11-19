@@ -81,7 +81,10 @@ public class DialogueManage : MonoBehaviour
         if (StoryDialgouesLines[currentDialogue].tartismaID == StoryDialgouesLines[currentDialogue + 1].tartismaID)
         {
             if (StoryDialgouesLines[currentDialogue].voice != null)
+            {
                 Invoke(nameof(ContinueDialogue), StoryDialgouesLines[currentDialogue].voice.length);
+                MachineFaceManager.StartTalking();
+            }
             else
             {
                 Invoke(nameof(ContinueDialogue), 3f);
@@ -90,7 +93,9 @@ public class DialogueManage : MonoBehaviour
         else
         {
             if (StoryDialgouesLines[currentDialogue].voice != null)
+            {
                 Invoke(nameof(CloseDialogue), StoryDialgouesLines[currentDialogue].voice.length);
+            }
             else
             {
                 Invoke(nameof(CloseDialogue), 3f);
@@ -133,11 +138,13 @@ public class DialogueManage : MonoBehaviour
         isPlaying = false;
         DialoguePanel.SetActive(false);
         StoryDialgouesLines[currentDialogue].dialogueSonundakiEvent?.Invoke();
+        MachineFaceManager.StopTalking();
         currentDialogue++;
     }
 
     private void CloseCustomDialogue()
     {
+        MachineFaceManager.StopTalking();
         _audioSource.Stop();
         CustomDialoguePanel.SetActive(false);
     }
