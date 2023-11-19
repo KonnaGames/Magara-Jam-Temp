@@ -24,7 +24,6 @@ public class YardimEt : MonoBehaviour
 
     public void HealtActiveEt()
     {
-
         FindObjectOfType<HealtActivator>().HealtActivate(true);
     }
 }

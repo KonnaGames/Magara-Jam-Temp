@@ -15,6 +15,7 @@ public class PlayerMovement3D : MonoBehaviour
     [SerializeField] float gravity = -30f;
     [SerializeField] LayerMask ground;
     [SerializeField] float jumpHeight = 6f;
+    [SerializeField] private AudioSource bossAudioSource;
 
     private float velocityY;
     private bool isGrounded;
@@ -49,7 +50,6 @@ public class PlayerMovement3D : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
         }
-
         //ActivateController();
     }
 
