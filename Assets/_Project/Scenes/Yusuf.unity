@@ -1132,6 +1132,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 284773406422336496, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284832673042415362, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 284835235121686770, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
       propertyPath: m_Name
       value: BossRoom
@@ -1139,6 +1147,74 @@ PrefabInstance:
     - target: {fileID: 284835235121686770, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 284835235121686770, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284925456104005260, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284972073073405668, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285206862855675602, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285248606859984678, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285279105782341954, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285285585508278704, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285288276106464770, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285414454737794228, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285417956544898592, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285514257399849366, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285533989305602304, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285548259911933878, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285601504051794890, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285618595415425148, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285629075908302310, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285632083388287044, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 288013953707600060, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
       propertyPath: m_LocalPosition.x
