@@ -1967,6 +1967,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1201092920}
     - target: {fileID: 6444907261916052723, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      propertyPath: projectileSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444907261916052723, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
       propertyPath: bossbackgroundMusic
       value: 
       objectReference: {fileID: 8300000, guid: 5cf6110d80a5be3478ea5c741a49fac5, type: 3}
