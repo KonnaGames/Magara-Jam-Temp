@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 public class PlayerMovement3D : MonoBehaviour
 {
@@ -37,11 +38,18 @@ public class PlayerMovement3D : MonoBehaviour
         Debug.Log("Player Start Calisti");
         transform.position = PlayerSpawnManager.instance.SetPlayerPositionBySpawnPoints();
 
+        Invoke(nameof(ActivateController), 1);
+
         if (cursorLock)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
         }
+    }
+
+    private void ActivateController()
+    {
+        controller.enabled = true;
     }
 
     void Update()
@@ -80,7 +88,6 @@ public class PlayerMovement3D : MonoBehaviour
         velocityY += gravity * 2f * Time.deltaTime;
 
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * Speed + Vector3.up * velocityY;
-
         controller.Move(velocity * Time.deltaTime);
 
         if (isGrounded && Input.GetButtonDown("Jump") && canJump)

@@ -20,6 +20,7 @@ public class PlayerSpawnManager : MonoBehaviour
     
     public Vector3 SetPlayerPositionBySpawnPoints()
     {
+        print("Dönen Pos: " + SpawnPoints[lastPosInt].position);
         return SpawnPoints[lastPosInt].position;
     }
 
