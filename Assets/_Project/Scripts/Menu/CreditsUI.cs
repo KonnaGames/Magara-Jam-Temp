@@ -17,6 +17,7 @@ public class CreditsUI : MonoBehaviour
     public float slideDistance = -900f;
     public float duration = 3.0f;
 
+    public AudioClip creditsMusic;
 
     private void Start()
     {
@@ -26,13 +27,9 @@ public class CreditsUI : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-
-    }
-
     public void ShowCredits()
     {
+        BackgroundMusic.instance.MusicDegistir(creditsMusic);
         ShrinkObject();
         SlideDown();
     }
