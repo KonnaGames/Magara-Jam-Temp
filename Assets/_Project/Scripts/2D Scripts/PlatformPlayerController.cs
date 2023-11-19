@@ -43,6 +43,7 @@ public class PlatformPlayerController : MonoBehaviour
 
         if (SoundManager.instance != null)
         {
+            SoundManager.instance.GetComponent<AudioSource>().loop = true;
             SoundManager.instance.PlaySoundEffect(backgroundMusic);
         }
     }
