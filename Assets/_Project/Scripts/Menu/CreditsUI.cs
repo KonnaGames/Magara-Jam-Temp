@@ -46,4 +46,9 @@ public class CreditsUI : MonoBehaviour
         Vector3 endPos = startPos - new Vector3(0f, slideDistance, 0f);
         objectToSlide.DOAnchorPos3D(endPos, duration).SetEase(Ease.OutQuad);
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
