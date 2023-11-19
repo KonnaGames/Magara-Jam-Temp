@@ -52,6 +52,11 @@ public class DialogueManage : MonoBehaviour
         currentDialogue = 0;
     }
 
+    public void ChangeCurrentDialogue(int id)
+    {
+        currentDialogue = id;
+    }
+
     [ContextMenu("Diayalogu Oynat")]
     public void StartStoryDialogue()
     {

@@ -31,6 +31,7 @@ public class PlayerMovement3D : MonoBehaviour
     private Vector2 currentDir;
     private Vector2 currentDirVelocity;
     private Vector3 velocity;
+    private bool canMove;
 
     private void Awake()
     {
@@ -39,10 +40,12 @@ public class PlayerMovement3D : MonoBehaviour
 
     void Start()
     {
+        canMove = true;
         controller = GetComponent<CharacterController>();
         _animator.SetTrigger("standUp");
         Debug.Log("Player Start Calisti");
         transform.position = PlayerSpawnManager.instance.SetPlayerPositionBySpawnPoints();
+        Cursor.visible = false;
 
 
         if (cursorLock)
@@ -57,11 +60,22 @@ public class PlayerMovement3D : MonoBehaviour
     {
         controller.enabled = true;
         _isStandUp = true;
+        
+        if (PlayerSpawnManager.instance.lastPosInt == 2)
+        {
+            canMove = false;
+            DialogueManage.instance.StartStoryDialogue();
+        }
     }
 
+    public void CanMove(bool canMove)
+    {
+        this.canMove = canMove;
+    }
+    
     void Update()
     {
-        if (PlayerHealhtSystem.Instance.GetHealth() > 0 && _isStandUp)
+        if (PlayerHealhtSystem.Instance.GetHealth() > 0 && _isStandUp && canMove)
         {
             UpdateMouse();
             UpdateMove();

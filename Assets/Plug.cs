@@ -13,16 +13,27 @@ public class Plug : MonoBehaviour,IInteractable
     public string interactionName { get; private set; }
     public bool isInteracted { get; private set; }
 
+    private void Start()
+    {
+        isInteracted = true;
+    }
+
     public void Interact()
     {
         _animation.Play();
         OnPlugPulledEvent?.Invoke();
+        isInteracted = true;
     }
 
 
     private void Awake()
     {
         interactionName = _interactText;
+    }
+
+    public void InteractAc()
+    {
+        isInteracted = false;
     }
 
 }

@@ -99,4 +99,9 @@ public class InitSceneUI : MonoBehaviour
         SceneManager.LoadScene(buildIndex);
         yield break;
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

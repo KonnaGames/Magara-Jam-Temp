@@ -31,4 +31,9 @@ public class YardimEt : MonoBehaviour
     {
         FindObjectOfType<AlarmActiavotr>().AlarmActivator(true);
     }
+
+    public void CharacterCanMove(bool canMove)
+    {
+        FindObjectOfType<PlayerMovement3D>().CanMove(canMove);
+    }
 }

@@ -74,10 +74,9 @@ public class PlayerHealhtSystem : MonoBehaviour
     }
     private IEnumerator RestartingScene()
     {
-        Debug.Log("Sahne Yeniden Yükleniyor...");
+        Debug.Log("Sahne Yeniden Yï¿½kleniyor...");
         yield return new WaitForSeconds(5f);
-
-        DialogueManage.instance.currentDialogue = 29;
+        DialogueManage.instance.ChangeCurrentDialogue(39);
         SceneManager.LoadScene(1);
     }
 }

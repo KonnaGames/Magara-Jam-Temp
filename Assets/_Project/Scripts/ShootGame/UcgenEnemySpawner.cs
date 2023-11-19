@@ -19,8 +19,7 @@ public class UcgenEnemySpawner : MonoBehaviour
     {
         if (isPlaying) return;
         
-        
-        if (DialogueManage.instance.currentDialogue == 9)
+        if (DialogueManage.instance.currentDialogue >= 9)
         {
             StartSpawning();
             isPlaying = true;
@@ -41,6 +40,4 @@ public class UcgenEnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnRate);
         }
     }
-
-   
 }

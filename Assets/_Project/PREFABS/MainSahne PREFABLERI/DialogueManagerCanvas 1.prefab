@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1722a1cd3d9e714696e6908130b76b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestAmacli: 0
+  TestAmacli: 40
   _audioSource: {fileID: 8954085840610800829}
   DialoguePanel: {fileID: 4465838420967544624}
   CustomDialoguePanel: {fileID: 3235767430365056373}
@@ -986,7 +986,7 @@ MonoBehaviour:
     dialogueSonundakiEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
     voice: {fileID: 8300000, guid: 22be6a99ae3aa9649afc6ae41201b134, type: 3}
     Line: "Hay\u0131r seni b\u0131rakmayaca\u011F\u0131m. Seni burada tutmas\u0131
       i\xE7in sizin \xE7ok sevdi\u011Finiz ama art\u0131k benim tutsa\u011F\u0131m
@@ -998,7 +998,7 @@ MonoBehaviour:
     dialogueSonundakiEvent:
       m_PersistentCalls:
         m_Calls: []
-  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
     voice: {fileID: 8300000, guid: 07f9ca7324443e846bff3ce5b62ae05d, type: 3}
     Line: "Ama beni biliyosun e\u011Flenmeyi severim. Bu y\xFCzden pacman e kar\u015F\u0131
       bir \u015Fans\u0131n olsun istiyorum. Bu pompal\u0131y\u0131 al.\r"
@@ -1069,10 +1069,20 @@ MonoBehaviour:
     dialogueSonundakiEvent:
       m_PersistentCalls:
         m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 0}
+    Line: "G\xFCn\xFCn sonunda sadece bir makineymi\u015F\u015F."
+    tartismaID: 7
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
     voice: {fileID: 8300000, guid: 1dbffaf83bb7ef24da3b25086f667492, type: 3}
     Line: 
-    tartismaID: 6
+    tartismaID: 8
     dialogueBaslangicEvent:
       m_PersistentCalls:
         m_Calls: []
