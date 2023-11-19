@@ -1510,6 +1510,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: TestAmacli
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
       propertyPath: StoryDialgouesLines.Array.data[7].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 381474935}
@@ -1529,6 +1541,30 @@ PrefabInstance:
       propertyPath: StoryDialgouesLines.Array.data[23].dialogueBaslangicEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 381474935}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 749588510}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: CrossActiveEt
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: YardimEt, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036425532570555440, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+      propertyPath: StoryDialgouesLines.Array.data[39].dialogueSonundakiEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9131794317653970122, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
       propertyPath: m_Name
       value: DialogueManagerCanvas 1
@@ -1618,6 +1654,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+--- !u!114 &749588510 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7570589485657077426, guid: 3bb3847370f6d0e4da9d4a6865ad70c9, type: 3}
+  m_PrefabInstance: {fileID: 749588509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9da3257b2acc7a48a10e64a6f59ddb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &793120383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4348067280264203269, guid: 78e6e9bc827a7b24590cd87b67573702, type: 3}

@@ -14,6 +14,11 @@ public class UcgenEnemySpawner : MonoBehaviour
 
     private bool isPlaying;
 
+    private void Start()
+    {
+        isPlaying = false;
+    }
+
 
     private void Update()
     {
