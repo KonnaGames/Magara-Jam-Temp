@@ -24,6 +24,9 @@ public class PlugMission : MonoBehaviour
         //Dialog görünsün ve credits gelsin
         _creditsUI.gameObject.SetActive(true);
         _creditsUI.ShowCredits();
+
+        FindObjectOfType<PlayerMovement3D>().StopMoving();
+        FindObjectOfType<GunController>().StopShooting();
     }
 
     private void Awake()

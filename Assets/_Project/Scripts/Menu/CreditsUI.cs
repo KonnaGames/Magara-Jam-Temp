@@ -25,6 +25,7 @@ public class CreditsUI : MonoBehaviour
         {
             SlideDown();
         }
+        ShowCredits();
     }
 
     public void ShowCredits()

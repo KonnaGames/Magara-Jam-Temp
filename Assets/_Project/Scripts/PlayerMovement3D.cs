@@ -47,7 +47,6 @@ public class PlayerMovement3D : MonoBehaviour
         transform.position = PlayerSpawnManager.instance.SetPlayerPositionBySpawnPoints();
         Cursor.visible = false;
 
-
         if (cursorLock)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -66,6 +65,11 @@ public class PlayerMovement3D : MonoBehaviour
             canMove = false;
             DialogueManage.instance.StartStoryDialogue();
         }
+    }
+
+    public void StopMoving()
+    {
+        canMove = false;
     }
 
     public void CanMove(bool canMove)

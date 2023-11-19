@@ -52,6 +52,11 @@ public class GunController : MonoBehaviour
 
         canShoot = true;
     }
+
+    public void StopShooting()
+    {
+        canShoot = false;
+    }
     private void GunRecoil()
     {
         recoilAnim.Play();
