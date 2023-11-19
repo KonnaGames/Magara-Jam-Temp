@@ -1414,7 +1414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "30 Skora Ula\u015F"
+  m_text: "40 Skora Ula\u015F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
   m_sharedMaterial: {fileID: -1082527664289858156, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
@@ -2481,7 +2481,7 @@ PrefabInstance:
       objectReference: {fileID: 107714758}
     - target: {fileID: 892646906066891287, guid: e38ad7b4335db0e48ac6711d60effef2, type: 3}
       propertyPath: _settings.SuccessScore
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 892646906066891287, guid: e38ad7b4335db0e48ac6711d60effef2, type: 3}
       propertyPath: _settings.RateMultiplier
