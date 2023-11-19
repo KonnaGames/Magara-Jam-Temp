@@ -24,7 +24,7 @@ public class UcgenEnemySpawner : MonoBehaviour
     {
         if (isPlaying) return;
         
-        if (DialogueManage.instance.currentDialogue >= 9)
+        if (DialogueManage.instance.currentDialogue >= 9 || DialogueManage.instance.currentDialogue < 5)
         {
             StartSpawning();
             isPlaying = true;

@@ -2472,6 +2472,10 @@ PrefabInstance:
       value: GuitarHeroManager
       objectReference: {fileID: 0}
     - target: {fileID: 892646906066891287, guid: e38ad7b4335db0e48ac6711d60effef2, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 686802001}
+    - target: {fileID: 892646906066891287, guid: e38ad7b4335db0e48ac6711d60effef2, type: 3}
       propertyPath: _boxFactory
       value: 
       objectReference: {fileID: 1898391868}

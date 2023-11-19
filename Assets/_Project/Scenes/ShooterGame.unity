@@ -841,6 +841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8319179601681675498, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8772617879820289229, guid: bffd14e4f97b1b744941a037716adfb0, type: 3}
       propertyPath: m_Pivot.x
       value: 0

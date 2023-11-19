@@ -13,6 +13,7 @@ public class GuitarHeroManager : MonoBehaviour
     public static GuitarHeroManager _instance;
     [SerializeField] private List<SpawnPlace> _spawnPlaces;
     [SerializeField] private BoxFactory _boxFactory;
+    public GameObject canvas;
 
     [SerializeField] private int _heartCount = 3;
     [SerializeField] private int _score = 0;
@@ -115,6 +116,7 @@ public class GuitarHeroManager : MonoBehaviour
     {
         _isGameFinished = true;
         _audioSource.Stop();
+        canvas.SetActive(false);
         LoadingScreen.instance.LoadScene(1);
     }
 

@@ -34,6 +34,7 @@ public class ScoreCounter : MonoBehaviour
         if (score == 0)
         {
             isWarping = true;
+            transform.gameObject.SetActive(false);
             LoadingScreen.instance.LoadMainMenu();
         }
     }
