@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 1935795591535106049}
   - component: {fileID: 6135290186475751540}
   - component: {fileID: 7953483939247819229}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ArcadeMachineBolum1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

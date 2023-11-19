@@ -16,6 +16,7 @@ public class InteractionController : MonoBehaviour
     [SerializeField] private Transform interactorSource;
     [SerializeField] private float interactRange;
     [SerializeField] private TextMeshProUGUI interactionText;
+    [SerializeField] private LayerMask _interactableLayer;
 
     private IInteractable interactable1;
 
@@ -26,7 +27,7 @@ public class InteractionController : MonoBehaviour
         interactable1 = null;
         Ray r = new Ray(interactorSource.position, interactorSource.forward);
 
-        if (Physics.Raycast(r, out RaycastHit hitObject, interactRange))
+        if (Physics.Raycast(r, out RaycastHit hitObject, interactRange, _interactableLayer))
         {
             if (hitObject.collider.gameObject.TryGetComponent(out IInteractable interactable))
             {
