@@ -6,7 +6,6 @@ public class PlayerSpawnManager : MonoBehaviour
 {
     public static PlayerSpawnManager instance;
     
-    
     [SerializeField] private List<Transform> SpawnPoints;
     public int lastPosInt;
 

@@ -27,6 +27,7 @@ public class PlatformPlayerController : MonoBehaviour
     [SerializeField] private AudioClip jumpEffect;
     [SerializeField] private AudioClip pickKeyEffect;
     [SerializeField] private AudioClip doorOpenEffect;
+    [SerializeField] private AudioClip backgroundMusic;
 
     private void Start()
     {
@@ -39,6 +40,11 @@ public class PlatformPlayerController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         _particleSystem = GetComponentInChildren<ParticleSystem>();
         tailMaterial.color = Color.white;
+
+        if (SoundManager.instance != null)
+        {
+            SoundManager.instance.PlaySoundEffect(backgroundMusic);
+        }
     }
 
     private void Update()
