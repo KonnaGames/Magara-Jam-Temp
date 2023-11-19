@@ -1016,6 +1016,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6962447269189120134, guid: 37171fb2663ff3646ae5a548d482dd4e, type: 3}
+      propertyPath: creditsMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: e9959c5e1fcc7fe4a94dc31e274faaa6, type: 3}
     - target: {fileID: 8243918139851301313, guid: 37171fb2663ff3646ae5a548d482dd4e, type: 3}
       propertyPath: m_Name
       value: CreditsPanel
