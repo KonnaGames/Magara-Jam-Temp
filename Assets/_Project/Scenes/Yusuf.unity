@@ -3092,7 +3092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b01b1a0b129e68419399772e6193f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthObject: {fileID: 0}
+  healthObject: {fileID: 220720036}
 --- !u!4 &1957825843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1115925160621439344, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
@@ -4561,6 +4561,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 911297822}
     m_Modifications:
+    - target: {fileID: -6822449226969735591, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
+      propertyPath: interactinName2
+      value: Insert Coin
+      objectReference: {fileID: 0}
     - target: {fileID: 350526580777243, guid: 3196cd623fa19ed46afd3fdce5d12160, type: 3}
       propertyPath: m_Name
       value: ArcadeMachineBolum3
