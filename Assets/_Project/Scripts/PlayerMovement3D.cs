@@ -47,11 +47,6 @@ public class PlayerMovement3D : MonoBehaviour
         transform.position = PlayerSpawnManager.instance.SetPlayerPositionBySpawnPoints();
         Cursor.visible = false;
 
-        if (cursorLock)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
-        }
         //ActivateController();
     }
 
