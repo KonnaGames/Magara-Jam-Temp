@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05c09778-3c7e-46f4-a6b5-ff6549d18ae2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/AlarmController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AlarmController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plug.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plug.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Animations/Boss Room.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Animations/Boss Room/PlugFalling.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Animations/Boss Room/PlugFalling.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Materials/3D Scene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Materials/3D Scene/FireBell.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Materials/3D Scene/FireBell.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Materials/Boss Room.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Materials/Boss Room/Alarm001_UpdatedPSRMat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Materials/Boss Room/Alarm001_UpdatedPSRMat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Models/Boss Room.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Models/Boss Room/FireAlarm.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Models/Boss Room/FireAlarm.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Models/Boss Room/Plug.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Models/Boss Room/Plug.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Models/Boss Room/Socket.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Models/Boss Room/Socket.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/PREFABS/Diger Prefabler/3D Scene/Boss Room.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/PREFABS/Diger Prefabler/3D Scene/Boss Room/Plug.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/PREFABS/Diger Prefabler/3D Scene/Boss Room/Plug.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Textures/Boss Room.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Textures/Boss Room/Alarm001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Textures/Boss Room/Alarm001.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/PREFABS/MainSahne PREFABLERI/ArcadeMachineBolum1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/PREFABS/MainSahne PREFABLERI/ArcadeMachineBolum1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Yusuf.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Yusuf.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/InteractionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2YOV4wNdTG6uRsG2cFfNE4oj7RA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05c09778-3c7e-46f4-a6b5-ff6549d18ae2" name="Default Changelist" comment="" />
+      <created>1700396428282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700396428282</updated>
+    </task>
+    <servers />
+  </component>
+</project>

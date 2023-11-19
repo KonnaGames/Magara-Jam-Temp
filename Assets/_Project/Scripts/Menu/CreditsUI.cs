@@ -28,10 +28,13 @@ public class CreditsUI : MonoBehaviour
 
     private void Update()
     {
-        if(showCredits)
-        {
-            ShrinkObject();
-        }
+
+    }
+
+    public void ShowCredits()
+    {
+        ShrinkObject();
+        SlideDown();
     }
 
     private void ShrinkObject()
