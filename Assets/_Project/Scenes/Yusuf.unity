@@ -456,6 +456,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4404195442393844, guid: 958521058a9c74341bcc8323137f68b1, type: 3}
   m_PrefabInstance: {fileID: 823136216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &542703086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2312975498488983739, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+  m_PrefabInstance: {fileID: 971795423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &560721933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4404195442393844, guid: 958521058a9c74341bcc8323137f68b1, type: 3}
@@ -758,11 +763,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 958521058a9c74341bcc8323137f68b1, type: 3}
---- !u!1 &891290146 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2312975498488983739, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
-  m_PrefabInstance: {fileID: 971795423}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &907711534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1091,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 288013953707600060, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
       insertIndex: 2
       addedObject: {fileID: 1326137471}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 284835235121686770, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1391043049}
   m_SourcePrefab: {fileID: 100100000, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
 --- !u!1001 &981307572
 PrefabInstance:
@@ -2155,6 +2158,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a166fb671afe1046976d33f2e64e26e, type: 3}
+--- !u!1 &1391043045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 284835235121686770, guid: b53417c00a49ef347b9160313e7c1839, type: 3}
+  m_PrefabInstance: {fileID: 971795423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1391043049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391043045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14585318f7eab644486fa247ea93c842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 542703086}
 --- !u!1001 &1422415518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2281,7 +2302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398228930809720775, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 5398228930809720775, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3031,6 +3052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1940960457}
+  - component: {fileID: 1940960458}
   m_Layer: 5
   m_Name: FightUI
   m_TagString: Untagged
@@ -3058,6 +3080,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1940960458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940960456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b01b1a0b129e68419399772e6193f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthObject: {fileID: 0}
 --- !u!4 &1957825843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1115925160621439344, guid: 6f8b5a43a09f6aa4f9b3cdaa8d4c4e6f, type: 3}
@@ -3222,17 +3257,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9166387896519662089, guid: 8ed2e8a9fd49dab41b3b9bfcea0a3a49, type: 3}
   m_PrefabInstance: {fileID: 7440483497087953287}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4526893992571090 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1980039846848902451, guid: 8ed2e8a9fd49dab41b3b9bfcea0a3a49, type: 3}
-  m_PrefabInstance: {fileID: 7440483497087953287}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 086353aeb19670a46b550c3c0c299ee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &408643229578782283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,9 +3528,9 @@ MonoBehaviour:
     dialogueSonundakiEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1851660057}
-          m_TargetAssemblyTypeName: Teleporter, Assembly-CSharp
-          m_MethodName: TeleportStageTwo
+        - m_Target: {fileID: 6292622797351726401}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: Makine2InteractiAc
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3516,9 +3540,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 4526893992571090}
-          m_TargetAssemblyTypeName: ArcadeMachineBolum2, Assembly-CSharp
-          m_MethodName: InteractiAc
+        - m_Target: {fileID: 6292622797351726401}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: TeleporturuCalistir
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3602,18 +3626,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1970015383}
-          m_TargetAssemblyTypeName: PlayerSpawnManager, Assembly-CSharp
-          m_MethodName: SpawnPointArttir
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 4
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
     dialogueSonundakiEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3650,7 +3662,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
-    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    voice: {fileID: 8300000, guid: 1dbffaf83bb7ef24da3b25086f667492, type: 3}
     Line: "Ben eskiden \xE7ok pop\xFCler bir atari salonunda atari makinesiydim.
       Herkes bu salona gelir ve saatlerce makinelerde oyun oynard\u0131. Tek bir
       makine hari\xE7, ben. Neden bilmiyorum hi\xE7kimse benimle oynamak istemiyordu.
@@ -3687,7 +3699,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
-    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    voice: {fileID: 8300000, guid: 1dbffaf83bb7ef24da3b25086f667492, type: 3}
     Line: "Hay\u0131r seni b\u0131rakmayaca\u011F\u0131m. Seni burada tutmas\u0131
       i\xE7in sizin \xE7ok sevdi\u011Finiz ama art\u0131k benim tutsa\u011F\u0131m
       olan birini \xE7a\u011F\u0131r\u0131yorum. PACMAN. Ama beni biliyosun e\u011Flenmeyi
@@ -3700,10 +3712,10 @@ MonoBehaviour:
     dialogueSonundakiEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 891290146}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 6292622797351726401}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: HealtActiveEt
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3712,10 +3724,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 226626240}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 6292622797351726401}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: ShotGunActiveEt
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3724,10 +3736,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 220720036}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 6292622797351726401}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: BossActiveEt
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3737,11 +3749,21 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
   - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
-    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    voice: {fileID: 8300000, guid: 1dbffaf83bb7ef24da3b25086f667492, type: 3}
     Line: "Vay be gitmeyi ger\xE7ekten bu kadar istiyorsun ha. O kadar \xE7ok istiyorsun
       ki pacman i \xF6ld\xFCrd\xFCn. Kim bilir beni de \xF6ld\xFCrebilirdin. Eh elveda
       ozaman. Benimle oynad\u0131\u011F\u0131n i\xE7in te\u015Fekk\xFCrler. Sen en
       iyi dostumsun.\r"
+    tartismaID: 6
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 1dbffaf83bb7ef24da3b25086f667492, type: 3}
+    Line: 
     tartismaID: 6
     dialogueBaslangicEvent:
       m_PersistentCalls:
@@ -4038,6 +4060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1270021843178168530}
+  - component: {fileID: 6292622797351726401}
   - component: {fileID: 835537739136203924}
   - component: {fileID: 6292622797351726400}
   - component: {fileID: 4243269428444981460}
@@ -4265,6 +4288,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6292622797351726401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4766117235498499660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9da3257b2acc7a48a10e64a6f59ddb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6908979035008910184
 RectTransform:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class ArcadeMachineBolum2 : MonoBehaviour, IInteractable
 
     public string interactinName2;
 
-    public bool isInteracted { get; private set; }
+    public bool isInteracted { get; set; }
     
     private void Start()
     {

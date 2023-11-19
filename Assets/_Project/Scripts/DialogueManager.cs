@@ -31,6 +31,8 @@ public class DialogueManage : MonoBehaviour
     {
         if (instance == null) instance = this;
         else if(instance != this) Destroy(this.gameObject);
+        
+        DontDestroyOnLoad(this);
     }
 
     private void Start()

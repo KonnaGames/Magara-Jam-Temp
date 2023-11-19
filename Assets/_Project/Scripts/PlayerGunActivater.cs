@@ -14,23 +14,12 @@ public class PlayerGunActivater : MonoBehaviour
     {
         Instance = this;
     }
-    void Update()
-    {
-        if (isActive)
-        {
-            shotgun.gameObject.SetActive(true);
-        }
-        else
-        {
-            shotgun.gameObject.SetActive(false);
-        }
-    }
     public bool GetIsGunActive()
     {
         return isActive;
     }
     public void SetIsGunActive(bool isGunActive)
     {
-        isActive = isGunActive;
+        shotgun.gameObject.SetActive(isGunActive);
     }
 }
