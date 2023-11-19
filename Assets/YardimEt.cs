@@ -36,4 +36,9 @@ public class YardimEt : MonoBehaviour
     {
         FindObjectOfType<PlayerMovement3D>().CanMove(canMove);
     }
+
+    public void CrossActiveEt()
+    {
+        FindObjectOfType<CrossActiavotr>().SetCrossActive();
+    }
 }

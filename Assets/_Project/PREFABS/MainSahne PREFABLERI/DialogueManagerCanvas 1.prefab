@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1722a1cd3d9e714696e6908130b76b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestAmacli: 40
+  TestAmacli: 0
   _audioSource: {fileID: 8954085840610800829}
   DialoguePanel: {fileID: 4465838420967544624}
   CustomDialoguePanel: {fileID: 3235767430365056373}
@@ -1044,6 +1044,30 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7570589485657077426}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: CharacterCanMove
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 7570589485657077426}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: CrossActiveEt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
   - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
     voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
