@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1248280396967039789, guid: 00b4bd03023be804ca732e7c4fe677f8, type: 3}
+      propertyPath: cross
+      value: 
+      objectReference: {fileID: 706165852}
     - target: {fileID: 1720734800177607581, guid: 00b4bd03023be804ca732e7c4fe677f8, type: 3}
       propertyPath: m_Name
       value: Character

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealhtSystem : MonoBehaviour
 {
+
     public static PlayerHealhtSystem Instance { get; set; }
 
     [SerializeField] private bool canDamaged;
@@ -76,6 +77,7 @@ public class PlayerHealhtSystem : MonoBehaviour
         Debug.Log("Sahne Yeniden Yükleniyor...");
         yield return new WaitForSeconds(5f);
 
+        DialogueManage.instance.currentDialogue = 29;
         SceneManager.LoadScene(1);
     }
 }
