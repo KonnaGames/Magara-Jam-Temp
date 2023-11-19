@@ -26,4 +26,9 @@ public class YardimEt : MonoBehaviour
     {
         FindObjectOfType<HealtActivator>().HealtActivate(true);
     }
+
+    public void AlarmlariKapat()
+    {
+        FindObjectOfType<AlarmActiavotr>().AlarmActivator(true);
+    }
 }

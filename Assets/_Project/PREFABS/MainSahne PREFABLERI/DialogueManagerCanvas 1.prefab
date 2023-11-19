@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1722a1cd3d9e714696e6908130b76b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestAmacli: 25
+  TestAmacli: 0
   _audioSource: {fileID: 8954085840610800829}
   DialoguePanel: {fileID: 4465838420967544624}
   CustomDialoguePanel: {fileID: 3235767430365056373}

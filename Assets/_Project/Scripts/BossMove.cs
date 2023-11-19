@@ -17,6 +17,7 @@ public class BossMove : MonoBehaviour
     [SerializeField] private float projectileSpeed;
     [SerializeField] private int health = 100;
 
+    [Header("Muzikler")] public AudioClip bossbackgroundMusic;
 
     private int currentPoint;
     private int healthMax = 100;
@@ -29,6 +30,7 @@ public class BossMove : MonoBehaviour
     }
     private void Start()
     {
+        BackgroundMusic.instance.MusicDegistir(bossbackgroundMusic);
         currentPoint = 0;
     }
     void Update()
@@ -55,6 +57,8 @@ public class BossMove : MonoBehaviour
             }
             if (health <= 0)
             {
+                FindObjectOfType<AlarmActiavotr>().AlarmActivator(true);
+                DialogueManage.instance.StartCustomDialogue();
                 Destroy(gameObject);
             }
         }
