@@ -20,9 +20,10 @@ public class SoundManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlaySoundEffect(AudioClip clip)
+    public void PlaySoundEffect(AudioClip clip, float volume = 1)
     {
         audioSource.clip = clip;
+        audioSource.volume = volume;
         audioSource.Play();
     }
 }

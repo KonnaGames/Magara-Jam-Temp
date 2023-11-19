@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class PlatformPlayerController : MonoBehaviour
@@ -39,7 +40,7 @@ public class PlatformPlayerController : MonoBehaviour
         _animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         _particleSystem = GetComponentInChildren<ParticleSystem>();
-        tailMaterial.color = Color.white;
+        tailMaterial.color = UnityEngine.Color.white;
 
         if (SoundManager.instance != null)
         {
@@ -62,6 +63,7 @@ public class PlatformPlayerController : MonoBehaviour
             colorID = collision.gameObject.GetComponent<Keys>().keyId;
             _particleSystem.startColor = body.color;
             tailMaterial.color = body.color;
+            tailMaterial.SetColor("_EmissionColor", body.color);
             _particleSystem.Play();
             Destroy(collision.gameObject);
         }
