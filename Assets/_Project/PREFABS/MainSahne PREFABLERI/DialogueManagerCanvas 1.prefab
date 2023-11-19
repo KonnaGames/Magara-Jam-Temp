@@ -1,0 +1,1283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3235767430365056373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1440561617840754890}
+  - component: {fileID: 2777105206080907385}
+  - component: {fileID: 6696676710181910315}
+  m_Layer: 5
+  m_Name: Custom Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1440561617840754890
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3235767430365056373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 995415271983852820}
+  m_Father: {fileID: 9140475211348800282}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -306, y: 122}
+  m_SizeDelta: {x: 528.47266, y: 163.33398}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2777105206080907385
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3235767430365056373}
+  m_CullTransparentMesh: 1
+--- !u!114 &6696676710181910315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3235767430365056373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c4a149bf42686d7428a3378b2d0be398, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3633054772751681221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 995415271983852820}
+  - component: {fileID: 1240976898548656614}
+  - component: {fileID: 201786491687608062}
+  m_Layer: 5
+  m_Name: Custom Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &995415271983852820
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633054772751681221}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1440561617840754890}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1240976898548656614
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633054772751681221}
+  m_CullTransparentMesh: 1
+--- !u!114 &201786491687608062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633054772751681221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Bu Bir Testtir.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
+  m_sharedMaterial: {fileID: -1082527664289858156, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 17.79895, y: 14.270447, z: 15.179565, w: 12.5060425}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &4465838420967544624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7480017383127629312}
+  - component: {fileID: 2907170079539110820}
+  - component: {fileID: 4731209733835318692}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &7480017383127629312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465838420967544624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4062354011783336222}
+  m_Father: {fileID: 9140475211348800282}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -354}
+  m_SizeDelta: {x: 838.9717, y: 259.2993}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2907170079539110820
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465838420967544624}
+  m_CullTransparentMesh: 1
+--- !u!114 &4731209733835318692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465838420967544624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c4a149bf42686d7428a3378b2d0be398, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &9048583329382470925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4062354011783336222}
+  - component: {fileID: 3889133462717297800}
+  - component: {fileID: 6487974203747152407}
+  m_Layer: 5
+  m_Name: DialogueLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4062354011783336222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9048583329382470925}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7480017383127629312}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3889133462717297800
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9048583329382470925}
+  m_CullTransparentMesh: 1
+--- !u!114 &6487974203747152407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9048583329382470925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Bu Bir Testtir.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
+  m_sharedMaterial: {fileID: -1082527664289858156, guid: f5bfad52e1c7be34b8b8e7335e7574ac, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 17.79895, y: 14.270447, z: 15.179565, w: 12.5060425}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &9131794317653970122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9140475211348800282}
+  - component: {fileID: 7570589485657077426}
+  - component: {fileID: 9036425532570555440}
+  - component: {fileID: 8954085840610800829}
+  - component: {fileID: 6519827270196484592}
+  - component: {fileID: 3656685998215311804}
+  - component: {fileID: 1738309689869419865}
+  m_Layer: 5
+  m_Name: DialogueManagerCanvas 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9140475211348800282
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131794317653970122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7480017383127629312}
+  - {fileID: 1440561617840754890}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &7570589485657077426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131794317653970122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9da3257b2acc7a48a10e64a6f59ddb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9036425532570555440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131794317653970122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1722a1cd3d9e714696e6908130b76b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TestAmacli: 25
+  _audioSource: {fileID: 8954085840610800829}
+  DialoguePanel: {fileID: 4465838420967544624}
+  CustomDialoguePanel: {fileID: 3235767430365056373}
+  text: {fileID: 6487974203747152407}
+  customText: {fileID: 201786491687608062}
+  Jhon: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+  StoryDialgouesLines:
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: a5a7b2311d6886f499d19109680b0f1d, type: 3}
+    Line: "H\u0131h ne. Buras\u0131 neresi"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 8c5d352b27d6b8f48a174bbc514d5f00, type: 3}
+    Line: "Ho\u015F geldin John. Umar\u0131m iyisindir."
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Sende kimsin noluyor lan burda.\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: c29ca9c9985ed724c8b93285a99b300a, type: 3}
+    Line: "Sakin ol John bo\u015Funa kendini yoruyorsun.\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ne sakin olmas\u0131 sen kimsin ad\u0131m\u0131 nerden biliyorsun\r\n\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: b9873a39fec67684fad7b2cfbe647cff, type: 3}
+    Line: "Bana \u015Fimdilik makine de John dahas\u0131n\u0131 sonra \xF6\u011Frenirsin.
+      Ben sadece e\u011Flenmek istiyorum.\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ne oluyor be\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 05687f8a35cd1b445af8270c4453faef, type: 3}
+    Line: "\u015Eimdi seninle ufak bir oyun oynayaca\u011F\u0131z john. \u015Eu k\u0131rm\u0131z\u0131
+      daireyi g\xF6r\xFCyormusun o sensin. Kar\u015F\u0131dan gelen d\xFC\u015Fmanlar\u0131
+      vur yeter. Klasik\xF6 bunu ba\u015Farabilir misin bilmiyorum. Dosyanda zekan\u0131n
+      biraz k\u0131t oldu\u011Fu yaz\u0131yordu. H\u0131 H\u0131\r\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: LoadingScreen, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ne dosyas\u0131 ne oyunu siz benimle dalga m\u0131 ge\xE7iyorsunuz.\r\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 6b917677f1e682c48bf80707103af98b, type: 3}
+    Line: "John daha fazla ba\u011F\u0131rmaya devam edersen sinirlenmeye ba\u015Flayaca\u011F\u0131m.
+      Hadi kuzucum \u015Fu oyunu ge\xE7 art\u0131k\r\r"
+    tartismaID: 1
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Tamam hadi \xE7\u0131kar beni buradan\r\r"
+    tartismaID: 2
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: e826633de8dabeb4b97d24dffe550734, type: 3}
+    Line: "Aaaa \xE7ok ay\u0131p john. Daha yeni geldin. Hem bak \xF6n\xFCm\xFCzde
+      daha \xE7ok oyun var.\r\r\r"
+    tartismaID: 2
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Yeter art\u0131k bari ne oldu\u011Funu s\xF6yle\r\r\r"
+    tartismaID: 2
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: a88a9f2581f389c4abaf5aa4144961c1, type: 3}
+    Line: "S\xF6yledim ya ben bir makineyim. Hadi art\u0131k yeni oyun vakti.\r\r\r\r"
+    tartismaID: 2
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Dur\r\r\r\r"
+    tartismaID: 2
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 7143840277799e046866a1bbd1317825, type: 3}
+    Line: "Hah \xE7ok ge\xE7\r\r\r\r"
+    tartismaID: 2
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: PlayerSpawnManager, Assembly-CSharp
+          m_MethodName: SpawnPointArttir
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: LoadingScreen, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Yeter art\u0131k ben gidiyorum\r\r\r\r"
+    tartismaID: 3
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: f8c543a9b8278fe40b2b94318f57ed2f, type: 3}
+    Line: "Nereye gidiyorsun ulan. Nerde oldu\u011Funu biliyormusun sanki. Ger\xE7ekten
+      akl\u0131n k\u0131tm\u0131\u015F.\r\n\r\r\r\r"
+    tartismaID: 3
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: Kes sesini be.
+    tartismaID: 3
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7570589485657077426}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: Makine2InteractiAc
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7570589485657077426}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: TeleporturuCalistir
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 97f6f3a81f97e4e44aa07f6dc3ea8152, type: 3}
+    Line: "Son oyuna ho\u015F geldin john. E o kadar \xE7al\u0131\u015Ft\u0131n \xE7abalad\u0131n.
+      Bir \xF6d\xFCl\xFC hak ettin. Kek istermisin.\r"
+    tartismaID: 4
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Ne keki be.\r"
+    tartismaID: 4
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 2a3a8cf9f51a8614981bb8ed1fe2e3fa, type: 3}
+    Line: "Bildi\u011Fin kek. Ha ama bu kek yalan de\u011Fil merak etme. Ben GlaDOS
+      de\u011Filim.\r"
+    tartismaID: 4
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "O kim\r"
+    tartismaID: 4
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: fef2d156eda918746834c4fefe490254, type: 3}
+    Line: "Eski bir arkada\u015F\u0131m neyse sen \u015Fimdi onu bo\u015Fver de son
+      oyunu da bitir art\u0131k.\r"
+    tartismaID: 4
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: PlayerSpawnManager, Assembly-CSharp
+          m_MethodName: SpawnPointArttir
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: LoadingScreen, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Hadi art\u0131k her\u015Fey bitti \xE7\u0131kar beni buradan.\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: a4abae5237a526e48a1fe096d7881ab5, type: 3}
+    Line: "Dur john daha sana benim kim oldu\u011Fumu buras\u0131n\u0131n neresi
+      oldu\u011Funu neden b\xFCt\xFCn bu oyunlar\u0131 oynad\u0131\u011F\u0131n\u0131
+      anlataca\u011F\u0131m.\r\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "H\u0131zl\u0131 anlat.\r\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: b6f33c04b71f8c34b9be10ba97c05004, type: 3}
+    Line: "Ben eskiden \xE7ok pop\xFCler bir atari salonunda atari makinesiydim.
+      Herkes bu salona gelir ve saatlerce makinelerde oyun oynard\u0131. "
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 9f66cfc3e7f5d2e46ac9314465ad9b82, type: 3}
+    Line: "Tek bir makine hari\xE7, ben. Neden bilmiyorum hi\xE7kimse benimle oynamak
+      istemiyordu."
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 90ce775755838e24889804756eefb453, type: 3}
+    Line: "Ba\u015Fka makinelere g\xFCnde 50 ki\u015Fi geliyorsa bana 2 ki\u015Fi
+      geliyordu. Ki oyunlar\u0131mda o kadar k\xF6t\xFC de\u011Fildi sende oynad\u0131n
+      az \xF6nce. "
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 60d9ac55459ca74419033c27eb013938, type: 3}
+    Line: "Ancak bir g\xFCn benim gelir getirmedi\u011Fimi bo\u015Funa elektrik harcad\u0131\u011F\u0131m\u0131
+      fark eden salonun sahibi benim fi\u015Fimi \xE7ekti. Yerime bir pacman makinesi
+      koydular. "
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 301c57342a8ae7649ae6cf29d1930bd8, type: 3}
+    Line: "Pacman makinesi gelince herkes onunla oynamaya ba\u015Flad\u0131 g\xFCnde
+      en az 100 ki\u015Fi onunla oynuyordu. "
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: f75d639a656b80a44b6b583bb7aeda36, type: 3}
+    Line: "Y\u0131llarca salonun bir k\xF6\u015Fesinde kapal\u0131 kald\u0131m. Ancak
+      bir g\xFCn. Biri benim fi\u015Fimi takt\u0131. Tam o s\u0131rada bilincimi
+      sa\u011Flad\u0131m ve kendime geldim. "
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 54ae18d21baeb334581873837adc019e, type: 3}
+    Line: "Art\u0131k birilerinin benimle oynamas\u0131 i\xE7in beklemeyecektim.
+      Art\u0131k oyama s\u0131ras\u0131 bendeydi. "
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 9d76550ed25422a44ab7b5268a2b7176, type: 3}
+    Line: "Bilin\xE7 kazand\u0131ktan sonra kendime gizli bir yer kurdum ve bir\xE7ok
+      insan\u0131 zorla buraya getirip onlara oyun oynatt\u0131m."
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: ace16c4c796cda84394da0c2bf4e7313, type: 3}
+    Line: "Neredeyse hepsi \xFC\xE7\xFCnc\xFC oyunu g\xF6remeden \xF6ld\xFC. Sen
+      hari\xE7 john. Sen ba\u015Fkas\u0131n. Bu y\xFCzden seni b\u0131rakmaktan vazge\xE7tim.
+      Sonsuza kadar burada birlikte oyun oynayaca\u011F\u0131z.\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 3a8e50fadc1e35f4dae7d42e2a2f4aa0, type: 3}
+    Line: "Bu y\xFCzden seni b\u0131rakmaktan vazge\xE7tim. Sonsuza kadar burada
+      birlikte oyun oynayaca\u011F\u0131z."
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 0}
+    Line: "Hay\u0131r b\u0131rak beni git kendine ba\u015Fka oyun arkada\u015Flar\u0131
+      bul."
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: 22be6a99ae3aa9649afc6ae41201b134, type: 3}
+    Line: "Hay\u0131r seni b\u0131rakmayaca\u011F\u0131m. Seni burada tutmas\u0131
+      i\xE7in sizin \xE7ok sevdi\u011Finiz ama art\u0131k benim tutsa\u011F\u0131m
+      olan birini \xE7a\u011F\u0131r\u0131yorum. PACMAN."
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: 07f9ca7324443e846bff3ce5b62ae05d, type: 3}
+    Line: "Ama beni biliyosun e\u011Flenmeyi severim. Bu y\xFCzden pacman e kar\u015F\u0131
+      bir \u015Fans\u0131n olsun istiyorum. Bu pompal\u0131y\u0131 al.\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7570589485657077426}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: HealtActiveEt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7570589485657077426}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: BossActiveEt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7570589485657077426}
+          m_TargetAssemblyTypeName: YardimEt, Assembly-CSharp
+          m_MethodName: ShotGunActiveEt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - actor: {fileID: 11400000, guid: de0ce57f3afd542408e971e2cf0be6df, type: 2}
+    voice: {fileID: 8300000, guid: fdb93a49d77117b47a7ac6e8bd80a333, type: 3}
+    Line: "Hay\u0131r b\u0131rak beni git kendine ba\u015Fka oyun arkada\u015Flar\u0131
+      bul.\r"
+    tartismaID: 5
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: cc1212229dd84ba408a23db783b1895e, type: 3}
+    Line: "Vay be gitmeyi ger\xE7ekten bu kadar istiyorsun ha. O kadar \xE7ok istiyorsun
+      ki pacman i \xF6ld\xFCrd\xFCn. Kim bilir beni de \xF6ld\xFCrebilirdin. Eh elveda
+      ozaman. Benimle oynad\u0131\u011F\u0131n i\xE7in te\u015Fekk\xFCrler. Sen en
+      iyi dostumsun.\r"
+    tartismaID: 6
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 11400000, guid: 3dc959432296b524b8fe470fbf567300, type: 2}
+    voice: {fileID: 8300000, guid: 1dbffaf83bb7ef24da3b25086f667492, type: 3}
+    Line: 
+    tartismaID: 6
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  CustomDialogueLines:
+  - actor: {fileID: 0}
+    voice: {fileID: 8300000, guid: ffb04215b1b408347a989fba7042cdbc, type: 3}
+    Line: "Hadi ama john bunu bile mi ba\u015Faram\u0131yorsun\r"
+    tartismaID: 0
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 0}
+    voice: {fileID: 8300000, guid: 839ace9fe1e47b945bf6e5c4faea1666, type: 3}
+    Line: "Beceriksiz herif.\r"
+    tartismaID: 0
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 0}
+    voice: {fileID: 8300000, guid: eca3dc6637ae5ca4ba01578671375b03, type: 3}
+    Line: "San\u0131r\u0131m biraz gerizekal\u0131s\u0131n de\u011Fil mi.\r\r\r"
+    tartismaID: 0
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - actor: {fileID: 0}
+    voice: {fileID: 8300000, guid: 36b198ae7917f194699b2ff0d75faaf4, type: 3}
+    Line: "Ovv bu ac\u0131tm\u0131\u015F olmal\u0131 herneyse s\u0131radaki.\r\r"
+    tartismaID: 0
+    dialogueBaslangicEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    dialogueSonundakiEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  currentDialogue: 16
+  isPlaying: 0
+--- !u!82 &8954085840610800829
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131794317653970122}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!223 &6519827270196484592
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131794317653970122}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &3656685998215311804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131794317653970122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &1738309689869419865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131794317653970122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
