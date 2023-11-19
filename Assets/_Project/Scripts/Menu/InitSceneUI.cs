@@ -34,10 +34,6 @@ public class InitSceneUI : MonoBehaviour
         isOpenSettingsPanel = false;
         settingsPanel.SetActive(false);
     }
-    private void Update()
-    {
-
-    }
 
     public void IlkSahneyiYukle()
     {
