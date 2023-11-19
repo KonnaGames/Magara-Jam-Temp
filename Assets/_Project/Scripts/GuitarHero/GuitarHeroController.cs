@@ -67,6 +67,10 @@ public class GuitarHeroController : MonoBehaviour
 
     private void OnRightKeyDown()
     {
+        //Eðer zaten bu box için týklandýysa bir daha týklanamasýn
+        if (_boxInArea.IsClickedFor)
+            return;
+
         _successCount++;
 
         Vector3 targetPos = _checkArea.transform.position;

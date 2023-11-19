@@ -22,8 +22,11 @@ public class Box : MonoBehaviour,IDestroyable
     private bool _canMove = false;
     private float _speed;
     private bool _isDestroyed = false;
+    private bool _isClickedFor = false;
 
     public bool IsDestroyed => _isDestroyed;
+
+    public bool IsClickedFor => _isClickedFor;
 
     public Direction Direction => _direction;
 
@@ -91,11 +94,13 @@ public class Box : MonoBehaviour,IDestroyable
     public void StartMove()
     {
         _canMove = true;
+        _isClickedFor = false;
     }
 
     public void StopMoving()
     {
         _canMove = false;
+        _isClickedFor = true;
     }
 
     public void Hide()
